@@ -218,5 +218,10 @@ void AGameController::OnDestroyGameController(AActor* SelfActor)
 		delete SoundWrong;
 		SoundWrong = NULL;
 	}
+
+	for (UBallGUI* ball : AllBallsGUI)
+	{
+		ball = NULL;
+	}
 }
 
