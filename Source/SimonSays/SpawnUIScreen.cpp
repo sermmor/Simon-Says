@@ -5,7 +5,6 @@
 #include "TextWidgetTypes.h"
 #include "TextBlock.h"
 
-
 // Sets default values
 ASpawnUIScreen::ASpawnUIScreen()
 {
@@ -30,17 +29,9 @@ void ASpawnUIScreen::BeginPlay()
 			if (IsGameScreen)
 			{
 				pScoreText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextScore");
-				pLifeText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextLives");
 			}
 		}
 	}
-}
-
-
-void ASpawnUIScreen::SetScoreText(int Score)
-{
-	if (pScoreText.IsValid())
-		pScoreText->SetText(FText::FromString("Score: " + FString::FromInt(Score)));
 }
 
 // Called every frame
@@ -48,6 +39,12 @@ void ASpawnUIScreen::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ASpawnUIScreen::SetScoreText(int Score)
+{
+	if (pScoreText.IsValid())
+		pScoreText->SetText(FText::FromString(FString::FromInt(Score)));
 }
 
 TWeakObjectPtr<class UUserWidget> ASpawnUIScreen::GetWidget() const

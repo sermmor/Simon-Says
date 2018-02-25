@@ -9,6 +9,7 @@
 
 const int SIZE_SECUENCE = 20;
 const int SCORE_POINTS_PER_BALL = 20;
+const int MAX_LIFE = 3;
 
 UCLASS()
 class SIMONSAYS_API AGameController : public AActor
@@ -36,7 +37,7 @@ private:
 	UMaterial* BallMaterialInterface;
 	GameType GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
-	int Score;
+	int Score, Life;
 
 	void CreateRandomSecuence();
 
@@ -69,4 +70,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Score")
 	int GetScore() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Life")
+	int GetLife() const;
 };

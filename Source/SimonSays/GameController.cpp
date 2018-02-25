@@ -5,7 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
-AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0)
+AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0), Life(MAX_LIFE)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -62,6 +62,7 @@ void AGameController::BeginPlay()
 
 	SimonSaysCurrentState = BEGIN;
 	Score = 0;
+	Life = MAX_LIFE;
 
 	CreateRandomSecuence();
 
@@ -87,7 +88,7 @@ void AGameController::Tick(float DeltaTime)
 
 void AGameController::UpdateSimonSaysGame(float DeltaTime)
 {
-	if (SimonCurrentSecuenceSize >= SIZE_SECUENCE)
+	if (SimonCurrentSecuenceSize >= SIZE_SECUENCE || Life == 0)
 		SimonSaysCurrentState = WIN_END; // TODO Change to records screen when game finished.
 
 	if (SimonSaysCurrentState == BEGIN && StrategyTurnOnAllLights())
@@ -119,22 +120,22 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 	else if (SimonSaysCurrentState == PLAYER_TURN_FINISHING && StrategyWaitUntilAllLightsTurnOff() && StrategyTurnOnAllLights())
 	{
 		// Secuence finished, prepared for the next secuence.
-		SimonCurrentIterSecuence = 0;
-		SimonCurrentSecuenceSize++;
 		SimonSaysCurrentState = WAIT_UNTIL_BEGIN_ENDS;
-
+		
 		if (SimonIsPlayerTurnOk)
 		{
-			// TODO Increase score.
+			Score += (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
 			UGameplayStatics::PlaySound2D(GetWorld(), SoundOk);
+			SimonCurrentIterSecuence = 0;
+			SimonCurrentSecuenceSize++;
 		}
 		else
 		{
-			// TODO Decrement a live.
+			Life--;
 			UGameplayStatics::PlaySound2D(GetWorld(), SoundWrong);
 			// Reset game.
-			SimonCurrentSecuenceSize = 1;
 			SimonCurrentIterSecuence = 0;
+			SimonCurrentSecuenceSize = 1;
 			SimonIndexBallInTurningOn = SecuenceBalls[SimonCurrentIterSecuence];
 		}
 	}
@@ -216,9 +217,7 @@ bool AGameController::StrategyReadAndCheckPlayerSecuence()
 		bool isPlayerFinished = SimonIndexPlayerSecuence >= (SimonCurrentSecuenceSize - 1);
 		if (!isPlayerFinished) 
 			SimonIndexPlayerSecuence++;
-		else if (SimonIsPlayerTurnOk)
-			Score += (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
-		
+
 		return isPlayerFinished || !SimonIsPlayerTurnOk;
 	}
 }
@@ -226,6 +225,11 @@ bool AGameController::StrategyReadAndCheckPlayerSecuence()
 int AGameController::GetScore() const
 {
 	return Score;
+}
+
+int AGameController::GetLife() const
+{
+	return Life;
 }
 
 void AGameController::OnDestroyGameController(AActor* SelfActor)
