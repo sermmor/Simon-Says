@@ -27,10 +27,17 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
 	TSubclassOf<class UUserWidget> WidgetObjToSpawn;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Type Screen")
+	bool IsGameScreen;
+
 	TWeakObjectPtr<class UUserWidget> GetWidget() const;
 
 private:
 	// Variable to hold the widget after creating it
 	TWeakObjectPtr<class UUserWidget> pToSpawnWidget;
+	TWeakObjectPtr<class UTextBlock> pScoreText;
+	TWeakObjectPtr<class UTextBlock> pLifeText;
 
+	UFUNCTION(BlueprintCallable, Category = "Score")
+	void SetScoreText(int score);
 };

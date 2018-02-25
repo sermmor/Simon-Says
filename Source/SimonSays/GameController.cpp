@@ -4,13 +4,13 @@
 #include "Engine.h"
 #include "Kismet/GameplayStatics.h"
 
-
 // Sets default values
-AGameController::AGameController() : SimonSaysCurrentState(BEGIN)
+AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Get assets.
 	static ConstructorHelpers::FObjectFinder<UMaterial> foundMaterial (TEXT("Material'/Game/Materials/BigMarble.BigMarble'"));
 	if (foundMaterial.Succeeded())
 		BallMaterialInterface = foundMaterial.Object;
@@ -23,6 +23,7 @@ AGameController::AGameController() : SimonSaysCurrentState(BEGIN)
 	if (foundSoundWrong.Succeeded())
 		SoundWrong = foundSoundWrong.Object;
 
+	// Events.
 	OnDestroyed.AddDynamic(this, &AGameController::OnDestroyGameController);
 }
 
@@ -59,6 +60,9 @@ void AGameController::BeginPlay()
 {
 	Super::BeginPlay();
 
+	SimonSaysCurrentState = BEGIN;
+	Score = 0;
+
 	CreateRandomSecuence();
 
 	TArray<UBallGUI*> BallComponents;
@@ -69,7 +73,7 @@ void AGameController::BeginPlay()
 		AllBallsGUI.Add(BallComponents[0]);
 	}
 	
-	GameTypeSelected = SIMON_SAYS; // TODO Minimun value product. For final version THIS should be selected by the player.
+	GameTypeSelected = SIMON_SAYS;
 }
 
 // Called every frame
@@ -109,6 +113,7 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 	}
 	else if (SimonSaysCurrentState == PLAYER_TURN && StrategyReadAndCheckPlayerSecuence())
 	{
+		StrategyClicOnBalls(false);
 		SimonSaysCurrentState = PLAYER_TURN_FINISHING;
 	}
 	else if (SimonSaysCurrentState == PLAYER_TURN_FINISHING && StrategyWaitUntilAllLightsTurnOff() && StrategyTurnOnAllLights())
@@ -211,8 +216,16 @@ bool AGameController::StrategyReadAndCheckPlayerSecuence()
 		bool isPlayerFinished = SimonIndexPlayerSecuence >= (SimonCurrentSecuenceSize - 1);
 		if (!isPlayerFinished) 
 			SimonIndexPlayerSecuence++;
+		else if (SimonIsPlayerTurnOk)
+			Score += (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
+		
 		return isPlayerFinished || !SimonIsPlayerTurnOk;
 	}
+}
+
+int AGameController::GetScore() const
+{
+	return Score;
 }
 
 void AGameController::OnDestroyGameController(AActor* SelfActor)

@@ -20,6 +20,15 @@ UBallGUI::UBallGUI() : DynamicMatEmit(0), Sphere(0), IsInitialized(false), IsEna
 void UBallGUI::BeginPlay()
 {
 	Super::BeginPlay();
+
+	IsInitialized = false, 
+	IsEnableClick = false;
+	IsClickBall = false;
+	EmitCounter = 0.0f;
+	EndEmitCounter = 0.01f;
+	CurrentEmision = 0.0f;
+	EndEmission = 50.0f;
+	State = BALL_OFF;
 }
 
 void UBallGUI::InitializeBall(UMaterial* BallMaterialInterface)

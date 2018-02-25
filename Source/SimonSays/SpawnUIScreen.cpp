@@ -2,6 +2,8 @@
 
 #include "SpawnUIScreen.h"
 #include "Blueprint/UserWidget.h"
+#include "TextWidgetTypes.h"
+#include "TextBlock.h"
 
 
 // Sets default values
@@ -25,8 +27,20 @@ void ASpawnUIScreen::BeginPlay()
 		if (pToSpawnWidget.IsValid())
 		{
 			pToSpawnWidget->AddToViewport();
+			if (IsGameScreen)
+			{
+				pScoreText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextScore");
+				pLifeText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextLives");
+			}
 		}
 	}
+}
+
+
+void ASpawnUIScreen::SetScoreText(int Score)
+{
+	if (pScoreText.IsValid())
+		pScoreText->SetText(FText::FromString("Score: " + FString::FromInt(Score)));
 }
 
 // Called every frame

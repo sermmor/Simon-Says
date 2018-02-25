@@ -8,6 +8,7 @@
 #include "GameController.generated.h"
 
 const int SIZE_SECUENCE = 20;
+const int SCORE_POINTS_PER_BALL = 20;
 
 UCLASS()
 class SIMONSAYS_API AGameController : public AActor
@@ -35,6 +36,7 @@ private:
 	UMaterial* BallMaterialInterface;
 	GameType GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
+	int Score;
 
 	void CreateRandomSecuence();
 
@@ -65,4 +67,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Controller Params")
 	TArray<AActor*> AllBalls;
 
+	UFUNCTION(BlueprintCallable, Category = "Score")
+	int GetScore() const;
 };
