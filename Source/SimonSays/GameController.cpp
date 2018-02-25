@@ -23,24 +23,43 @@ AGameController::AGameController() : SimonSaysCurrentState(BEGIN)
 	if (foundSoundWrong.Succeeded())
 		SoundWrong = foundSoundWrong.Object;
 
-	CreateRandomSecuence();
-
 	OnDestroyed.AddDynamic(this, &AGameController::OnDestroyGameController);
 }
 
 void AGameController::CreateRandomSecuence()
 {
-	//TODO Create a random secuence insead this static secuence.
+	int lastRandom = -1, newRandom, counterLastRandomEquals = 0;
+	for (int i = 0; i < SIZE_SECUENCE; i++)
+	{
+		newRandom = FMath::RandRange(0,3);
+		if (lastRandom != newRandom || counterLastRandomEquals < 3)
+		{
+			// Not repeat the same random ball more than 3 times.
+			SecuenceBalls[i] = newRandom;
+			if (lastRandom == newRandom)
+				counterLastRandomEquals++;
+			else
+				counterLastRandomEquals = 0;
+
+			lastRandom = newRandom;
+		}
+		else
+			i--; // If the same ball repeats generate other random for the same index.
+	}
+
+	/*//Secuence only for testing:
 	SecuenceBalls[0] = 0; SecuenceBalls[1] = 1; SecuenceBalls[2] = 2; SecuenceBalls[3] = 3; SecuenceBalls[4] = 3;
 	SecuenceBalls[5] = 0; SecuenceBalls[6] = 3; SecuenceBalls[7] = 2; SecuenceBalls[8] = 1; SecuenceBalls[9] = 0;
 	SecuenceBalls[10] = 0; SecuenceBalls[11] = 0; SecuenceBalls[12] = 2; SecuenceBalls[13] = 3; SecuenceBalls[14] = 2;
-	SecuenceBalls[15] = 2; SecuenceBalls[16] = 2; SecuenceBalls[17] = 2; SecuenceBalls[18] = 1; SecuenceBalls[19] = 0;
+	SecuenceBalls[15] = 2; SecuenceBalls[16] = 2; SecuenceBalls[17] = 2; SecuenceBalls[18] = 1; SecuenceBalls[19] = 0;*/
 }
 
 // Called when the game starts or when spawned
 void AGameController::BeginPlay()
 {
 	Super::BeginPlay();
+
+	CreateRandomSecuence();
 
 	TArray<UBallGUI*> BallComponents;
 	for (AActor* ball : AllBalls)
@@ -50,7 +69,7 @@ void AGameController::BeginPlay()
 		AllBallsGUI.Add(BallComponents[0]);
 	}
 	
-	GameTypeSelected = SIMON_SAYS; // TODO Minimun value product. For definitive version THIS should be selected by the player.
+	GameTypeSelected = SIMON_SAYS; // TODO Minimun value product. For final version THIS should be selected by the player.
 }
 
 // Called every frame
@@ -65,7 +84,7 @@ void AGameController::Tick(float DeltaTime)
 void AGameController::UpdateSimonSaysGame(float DeltaTime)
 {
 	if (SimonCurrentSecuenceSize >= SIZE_SECUENCE)
-		SimonSaysCurrentState = WIN_END;
+		SimonSaysCurrentState = WIN_END; // TODO Change to records screen when game finished.
 
 	if (SimonSaysCurrentState == BEGIN && StrategyTurnOnAllLights())
 	{
@@ -88,8 +107,7 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 		SimonIndexPlayerSecuence = 0;
 		SimonSaysCurrentState = PLAYER_TURN;
 	}
-	else if (SimonSaysCurrentState == PLAYER_TURN && StrategyWaitUntilAllLightsTurnOff() && StrategyReadAndCheckPlayerSecuence() 
-		&& StrategyClicOnBalls(false))
+	else if (SimonSaysCurrentState == PLAYER_TURN && StrategyReadAndCheckPlayerSecuence())
 	{
 		SimonSaysCurrentState = PLAYER_TURN_FINISHING;
 	}
@@ -180,10 +198,9 @@ bool AGameController::StrategyReadAndCheckPlayerSecuence()
 	{
 		if (AllBallsGUI[i]->IsClickedInBall())
 		{
-			AllBallsGUI[i]->ResetClickedInBall();
 			ballIndexClicked = i;
-			break;
 		}
+		AllBallsGUI[i]->ResetClickedInBall();
 	}
 
 	if (ballIndexClicked == -1)
