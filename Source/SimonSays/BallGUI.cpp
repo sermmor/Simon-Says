@@ -190,10 +190,4 @@ void UBallGUI::OnComponentDestroyed(bool bDestroyingHierarchy)
 		delete DynamicMatEmit;
 		DynamicMatEmit = NULL;
 	}
-
-	if (SoundTurnOn != NULL)
-	{
-		delete SoundTurnOn;
-		SoundTurnOn = NULL;
-	}
 }
