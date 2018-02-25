@@ -43,7 +43,7 @@ public:
 	void InitializeBall(UMaterial* BallMaterialInterface);
 
 	BallState GetBallState() const;
-	void TurnOn();
+	void TurnOn(bool EmitSound);
 	bool IsInTurnOff();
 
 	void EnableClickOnBall(bool enable);
@@ -58,6 +58,7 @@ private:
 	bool IsInitialized;
 	bool IsEnableClick;
 	bool IsClickBall;
+	bool IsSoundLightEnable;
 
 	float EmitCounter;
 	float EndEmitCounter;

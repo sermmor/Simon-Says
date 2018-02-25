@@ -30,14 +30,32 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Type Screen")
 	bool IsGameScreen;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Time options")
+	int TimeInit;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Time options")
+	float SpeedTimer;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Time options")
+	float TimeToDecrementTimer;
+
 	TWeakObjectPtr<class UUserWidget> GetWidget() const;
 
 private:
 	// Variable to hold the widget after creating it
 	TWeakObjectPtr<class UUserWidget> pToSpawnWidget;
+	TWeakObjectPtr<class UTextBlock> pTimeText;
 	TWeakObjectPtr<class UTextBlock> pScoreText;
-	TWeakObjectPtr<class UTextBlock> pLifeText;
+
+	int CurrentTime;
+	float CounterToDecrementTimer;
 
 	UFUNCTION(BlueprintCallable, Category = "Score")
 	void SetScoreText(int score);
+
+	UFUNCTION(BlueprintCallable, Category = "Time")
+	bool IsTimeEnds();
+
+	void UpdateTimeCounter(float DeltaTime);
+	void SetTimeText(int newTime);
 };

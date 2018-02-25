@@ -38,7 +38,9 @@ private:
 	GameType GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
 	int Score, Life;
-
+	bool IsTimeEnds, IsPlayerWinsGame, IsGameEnded;
+	
+	void GameOver();
 	void CreateRandomSecuence();
 
 	// Simon Game.
@@ -73,4 +75,14 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Life")
 	int GetLife() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Time")
+	void TimeEnd();
+
+	UFUNCTION(BlueprintCallable, Category = "Game Result")
+	bool IsGameOver() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Game Result")
+	bool IsPlayerWins() const;
+
 };

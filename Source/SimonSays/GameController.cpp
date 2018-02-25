@@ -5,7 +5,8 @@
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
-AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0), Life(MAX_LIFE)
+AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0), Life(MAX_LIFE), IsTimeEnds(false), 
+	IsPlayerWinsGame(false), IsGameEnded(false)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -63,6 +64,9 @@ void AGameController::BeginPlay()
 	SimonSaysCurrentState = BEGIN;
 	Score = 0;
 	Life = MAX_LIFE;
+	IsTimeEnds = false;
+	IsPlayerWinsGame = false;
+	IsGameEnded = false;
 
 	CreateRandomSecuence();
 
@@ -86,12 +90,41 @@ void AGameController::Tick(float DeltaTime)
 		UpdateSimonSaysGame(DeltaTime);
 }
 
+void AGameController::GameOver()
+{
+	if (GameTypeSelected == SIMON_SAYS)
+	{
+		if (SimonSaysCurrentState == WIN_END || SimonSaysCurrentState == LOSE_END)
+			return;
+
+		if (SimonCurrentSecuenceSize >= SIZE_SECUENCE || Life == 0 || IsTimeEnds)
+		{
+			IsGameEnded = true;
+			if (SimonCurrentSecuenceSize >= SIZE_SECUENCE)
+			{
+				SimonSaysCurrentState = WIN_END;
+				IsPlayerWinsGame = true;
+			}
+			else
+			{
+				SimonSaysCurrentState = LOSE_END;
+				IsPlayerWinsGame = false;
+			}
+
+			StrategyClicOnBalls(false);
+		}
+	}
+}
+
 void AGameController::UpdateSimonSaysGame(float DeltaTime)
 {
-	if (SimonCurrentSecuenceSize >= SIZE_SECUENCE || Life == 0)
-		SimonSaysCurrentState = WIN_END; // TODO Change to records screen when game finished.
+	GameOver();
 
-	if (SimonSaysCurrentState == BEGIN && StrategyTurnOnAllLights())
+	if (SimonSaysCurrentState == WIN_END || SimonSaysCurrentState == LOSE_END)
+	{
+		// TODO Go to game over o game win.
+	}
+	else if (SimonSaysCurrentState == BEGIN && StrategyTurnOnAllLights())
 	{
 		SimonCurrentSecuenceSize = 1;
 		SimonCurrentIterSecuence = 0;
@@ -121,7 +154,7 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 	{
 		// Secuence finished, prepared for the next secuence.
 		SimonSaysCurrentState = WAIT_UNTIL_BEGIN_ENDS;
-		
+
 		if (SimonIsPlayerTurnOk)
 		{
 			Score += (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
@@ -145,7 +178,7 @@ bool AGameController::StrategyTurnOnAllLights()
 {
 	for (UBallGUI* ball : AllBallsGUI)
 	{
-		ball->TurnOn();
+		ball->TurnOn(false);
 	}
 	return true;
 }
@@ -173,7 +206,7 @@ bool AGameController::StrategySimonSaysMachineTurn()
 		{
 			// Turn on other light.
 			SimonIndexBallInTurningOn = SecuenceBalls[SimonCurrentIterSecuence];
-			AllBallsGUI[SimonIndexBallInTurningOn]->TurnOn();
+			AllBallsGUI[SimonIndexBallInTurningOn]->TurnOn(true);
 			SimonCurrentIterSecuence++;
 		}
 		return false;
@@ -230,6 +263,22 @@ int AGameController::GetScore() const
 int AGameController::GetLife() const
 {
 	return Life;
+}
+
+void AGameController::TimeEnd()
+{
+	IsTimeEnds = true;
+	GameOver();
+}
+
+bool AGameController::IsGameOver() const
+{
+	return IsGameEnded;
+}
+
+bool AGameController::IsPlayerWins() const
+{
+	return IsPlayerWinsGame;
 }
 
 void AGameController::OnDestroyGameController(AActor* SelfActor)

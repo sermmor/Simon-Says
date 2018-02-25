@@ -104,7 +104,7 @@ void UBallGUI::UpdateEmissionOn(float DeltaTime)
 	else if (CurrentEmision >= EndEmission)
 	{
 		State = BALL_ON;
-		UGameplayStatics::PlaySound2D(GetWorld(), SoundTurnOn);
+		if (IsSoundLightEnable) UGameplayStatics::PlaySound2D(GetWorld(), SoundTurnOn);
 		ResetCounters();
 	}
 }
@@ -149,9 +149,10 @@ UBallGUI::BallState UBallGUI::GetBallState() const
 	return State;
 }
 
-void UBallGUI::TurnOn()
+void UBallGUI::TurnOn(bool emitSound)
 {
 	State = BALL_TURNING_ON;
+	IsSoundLightEnable = emitSound;
 }
 
 bool UBallGUI::IsInTurnOff()
@@ -184,7 +185,7 @@ void UBallGUI::OnClicInBall(AActor* Target, FKey ButtonPressed)
 	if (IsEnableClick && IsInTurnOff())
 	{
 		// When player click on ball: turn on the ball and mark as clicked.
-		TurnOn();
+		TurnOn(true);
 		IsClickBall = true;
 	}
 }
