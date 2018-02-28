@@ -53,6 +53,12 @@ void AGameController::CreateRandomSecuence()
 	SecuenceBalls[5] = 0; SecuenceBalls[6] = 3; SecuenceBalls[7] = 2; SecuenceBalls[8] = 1; SecuenceBalls[9] = 0;
 	SecuenceBalls[10] = 0; SecuenceBalls[11] = 0; SecuenceBalls[12] = 2; SecuenceBalls[13] = 3; SecuenceBalls[14] = 2;
 	SecuenceBalls[15] = 2; SecuenceBalls[16] = 2; SecuenceBalls[17] = 2; SecuenceBalls[18] = 1; SecuenceBalls[19] = 0;*/
+
+	//Secuence only for testing:
+	/*for (int i = 0; i < SIZE_SECUENCE; i++)
+	{
+		SecuenceBalls[i] = 0;
+	}*/
 }
 
 // Called when the game starts or when spawned
