@@ -49,12 +49,19 @@ private:
 
 	int CurrentTime;
 	float CounterToDecrementTimer;
+	bool PlayerIsReady;
 
 	UFUNCTION(BlueprintCallable, Category = "Score")
 	void SetScoreText(int score);
 
 	UFUNCTION(BlueprintCallable, Category = "Time")
 	bool IsTimeEnds();
+
+	UFUNCTION(BlueprintCallable, Category = "Item")
+	void UseItemTime();
+
+	UFUNCTION(BlueprintCallable, Category = "State")
+	void SetPlayerReady();
 
 	void UpdateTimeCounter(float DeltaTime);
 	void SetTimeText(int newTime);

@@ -7,7 +7,9 @@
 #include "BallGUI.h"
 #include "GameController.generated.h"
 
-const int SIZE_SECUENCE = 20;
+const float SECONDS_TO_LOAD = 2.0f;
+const int SIZE_SECUENCE = 15;
+const int GIVE_ITEM_AT_TURN = 11;
 const int SCORE_POINTS_PER_BALL = 20;
 const int MAX_LIFE = 3;
 
@@ -21,7 +23,7 @@ public:
 	AGameController();
 
 	enum GameType { NONE, SIMON_SAYS };
-	enum SimonSaysStates {BEGIN, WAIT_UNTIL_BEGIN_ENDS, MACHINE_TURN, 
+	enum SimonSaysStates {INIT, BEGIN, WAIT_UNTIL_BEGIN_ENDS, MACHINE_TURN, 
 		INIT_PLAYER_TURN, PLAYER_TURN, PLAYER_TURN_FINISHING, SHOW_OK, SHOW_FAIL, WIN_END, LOSE_END};
 
 protected:
@@ -37,8 +39,9 @@ private:
 	UMaterial* BallMaterialInterface;
 	GameType GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
+	float CurrentTime;
 	int Score, Life;
-	bool IsTimeEnds, IsPlayerWinsGame, IsGameEnded;
+	bool IsTimeEnds, IsPlayerWinsGame, IsGameEnded, ItemReadyToGive;
 	
 	void GameOver();
 	void CreateRandomSecuence();
@@ -53,6 +56,7 @@ private:
 	void UpdateSimonSaysGame(float DeltaTime);
 
 	// Strategys.
+	bool StrategyWaitPostLoad(float DeltaTime);
 	bool StrategyTurnOnAllLights();
 	bool StrategyWaitUntilAllLightsTurnOff();
 	bool StrategySimonSaysMachineTurn();
@@ -79,10 +83,27 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Time")
 	void TimeEnd();
 
+	UFUNCTION(BlueprintCallable, Category = "Item")
+	bool CanGiveItem() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Item")
+	void GiveItem();
+
+	UFUNCTION(BlueprintCallable, Category = "Game State")
+	bool IsInReadyState() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Game State")
+	bool IsInGoState() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Game State")
+	bool IsDeathTurn() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Game State")
+	bool IsPlayerTurn() const;
+
 	UFUNCTION(BlueprintCallable, Category = "Game Result")
 	bool IsGameOver() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Game Result")
 	bool IsPlayerWins() const;
-
 };

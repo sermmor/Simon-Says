@@ -2,11 +2,10 @@
 
 #include "GameController.h"
 #include "Engine.h"
-#include "Kismet/GameplayStatics.h"
 
 // Sets default values
-AGameController::AGameController() : SimonSaysCurrentState(BEGIN), Score(0), Life(MAX_LIFE), IsTimeEnds(false), 
-	IsPlayerWinsGame(false), IsGameEnded(false)
+AGameController::AGameController() : SimonSaysCurrentState(INIT), CurrentTime(0), Score(0), ItemReadyToGive(false),
+	Life(MAX_LIFE), IsTimeEnds(false), IsPlayerWinsGame(false), IsGameEnded(false)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -34,7 +33,7 @@ void AGameController::CreateRandomSecuence()
 	for (int i = 0; i < SIZE_SECUENCE; i++)
 	{
 		newRandom = FMath::RandRange(0,3);
-		if (lastRandom != newRandom || counterLastRandomEquals < 3)
+		if (lastRandom != newRandom || counterLastRandomEquals < 2)
 		{
 			// Not repeat the same random ball more than 3 times.
 			SecuenceBalls[i] = newRandom;
@@ -61,12 +60,14 @@ void AGameController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SimonSaysCurrentState = BEGIN;
+	SimonSaysCurrentState = INIT;
 	Score = 0;
 	Life = MAX_LIFE;
 	IsTimeEnds = false;
 	IsPlayerWinsGame = false;
 	IsGameEnded = false;
+	ItemReadyToGive = false;
+	CurrentTime = 0;
 
 	CreateRandomSecuence();
 
@@ -122,7 +123,11 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 
 	if (SimonSaysCurrentState == WIN_END || SimonSaysCurrentState == LOSE_END)
 	{
-		// TODO Go to game over o game win.
+		IsGameEnded = true;
+	}
+	else if (SimonSaysCurrentState == INIT && StrategyWaitPostLoad(DeltaTime))
+	{
+		SimonSaysCurrentState = BEGIN;
 	}
 	else if (SimonSaysCurrentState == BEGIN && StrategyTurnOnAllLights())
 	{
@@ -157,7 +162,10 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 
 		if (SimonIsPlayerTurnOk)
 		{
-			Score += (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
+			int scoreToAdd = (SCORE_POINTS_PER_BALL * SimonCurrentSecuenceSize);
+			Score += scoreToAdd;
+			if (SimonCurrentSecuenceSize == GIVE_ITEM_AT_TURN)
+				ItemReadyToGive = true;
 			UGameplayStatics::PlaySound2D(GetWorld(), SoundOk);
 			SimonCurrentIterSecuence = 0;
 			SimonCurrentSecuenceSize++;
@@ -172,6 +180,18 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 			SimonIndexBallInTurningOn = SecuenceBalls[SimonCurrentIterSecuence];
 		}
 	}
+}
+
+bool AGameController::StrategyWaitPostLoad(float DeltaTime)
+{
+	CurrentTime = CurrentTime + DeltaTime;
+	if (CurrentTime > SECONDS_TO_LOAD)
+	{
+		// Time finished. Reset generic timer and return true.
+		CurrentTime = 0;
+		return true;
+	}
+	return false;
 }
 
 bool AGameController::StrategyTurnOnAllLights()
@@ -279,6 +299,36 @@ bool AGameController::IsGameOver() const
 bool AGameController::IsPlayerWins() const
 {
 	return IsPlayerWinsGame;
+}
+
+bool AGameController::IsInReadyState() const
+{
+	return SimonSaysCurrentState == INIT;
+}
+
+bool AGameController::IsInGoState() const
+{
+	return SimonSaysCurrentState == BEGIN ||SimonSaysCurrentState == WAIT_UNTIL_BEGIN_ENDS;
+}
+
+bool AGameController::IsDeathTurn() const
+{
+	return SimonSaysCurrentState == MACHINE_TURN;
+}
+
+bool AGameController::IsPlayerTurn() const
+{
+	return SimonSaysCurrentState == PLAYER_TURN;
+}
+
+bool AGameController::CanGiveItem() const
+{
+	return ItemReadyToGive;
+}
+
+void AGameController::GiveItem()
+{
+	ItemReadyToGive = false;
 }
 
 void AGameController::OnDestroyGameController(AActor* SelfActor)

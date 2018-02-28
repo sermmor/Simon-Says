@@ -89,8 +89,7 @@ void ARankingManager::ReverseScorePlayers()
 	TArray<int> NewScorePlayers;
 
 	//UE_LOG(LogTemp, Warning, TEXT("end = %d - lastIndex = %s %d"), i, TCHAR_TO_UTF8(*NamePlayers[i]), ScorePlayers[i]);
-
-	//for (int i = 0; i < end; i++)
+	
 	for (int i = ScorePlayers.Num() - 1; i >= 0; i--)
 	{
 		NewScorePlayers.Add(ScorePlayers[i]);
