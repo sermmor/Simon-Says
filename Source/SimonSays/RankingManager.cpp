@@ -26,8 +26,30 @@ void ARankingManager::BeginPlay()
 		SavesGameInstance = Cast<USaveRanking>(UGameplayStatics::CreateSaveGameObject(USaveRanking::StaticClass()));
 		UGameplayStatics::SaveGameToSlot(SavesGameInstance, DefaultSaveSlotName, DefaultUserIndex);
 	}
-	NamePlayers = SavesGameInstance->NamePlayer;
-	ScorePlayers = SavesGameInstance->ScorePlayer;
+	CopyTopTen(SavesGameInstance->NamePlayer, SavesGameInstance->ScorePlayer, NamePlayers, ScorePlayers);
+}
+
+void ARankingManager::CopyTopTen(TArray<FString> &AllNamesFrom, TArray<int> &AllScoresFrom, 
+	TArray<FString> &AllNamesTo, TArray<int> &AllScoresTo)
+{
+	if (AllScoresFrom.Num() > 0)
+	{
+		int end = AllScoresFrom.Num() < 10? AllScoresFrom.Num() : 10;
+		for (int i = 0; i < end; i++)
+		{
+			if (AllNamesTo.Num() <= i)
+			{
+				AllNamesTo.Add(AllNamesFrom[i]);
+				AllScoresTo.Add(AllScoresFrom[i]);
+			}
+			else
+			{
+				AllNamesTo[i] = AllNamesFrom[i];
+				AllScoresTo[i] = AllScoresFrom[i];
+			}
+			
+		}
+	}
 }
 
 // Called every frame
@@ -58,7 +80,6 @@ void ARankingManager::SaveNewRecord(FString name, int score)
 
 	UE_LOG(LogTemp, Warning, TEXT("Your save: name (%s) with score (%d) [Total saved = %d]"), TCHAR_TO_UTF8(*name), score, NamePlayers.Num());
 	*/
-	DeleteEleven();
 	SaveCurrentRanking();
 }
 
@@ -98,26 +119,9 @@ void ARankingManager::ReverseScorePlayers()
 	ScorePlayers = NewScorePlayers;
 }
 
-void ARankingManager::DeleteEleven()
-{
-	if (ScorePlayers.Num() > 10)
-	{
-		TArray<FString> NewNamePlayers;
-		TArray<int> NewScorePlayers;
-		for (int i = 0; i < 10; i++)
-		{
-			NewNamePlayers.Add(NamePlayers[i]);
-			NewScorePlayers.Add(ScorePlayers[i]);
-		}
-		NamePlayers = NewNamePlayers;
-		ScorePlayers = NewScorePlayers;
-	}
-}
-
 void ARankingManager::SaveCurrentRanking()
 {
-	SavesGameInstance->NamePlayer = NamePlayers;
-	SavesGameInstance->ScorePlayer = ScorePlayers;
+	CopyTopTen(NamePlayers, ScorePlayers, SavesGameInstance->NamePlayer, SavesGameInstance->ScorePlayer);
 	UGameplayStatics::SaveGameToSlot(SavesGameInstance, SavesGameInstance->SaveSlotName, SavesGameInstance->UserIndex);
 }
 
