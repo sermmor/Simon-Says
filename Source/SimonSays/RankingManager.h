@@ -35,6 +35,7 @@ public:
 
 	void OnDestroyGameController(AActor* SelfActor);
 private:
+	UPROPERTY()
 	USaveRanking* SavesGameInstance;
 	TArray<FString> NamePlayers;
 	TArray<int> ScorePlayers;

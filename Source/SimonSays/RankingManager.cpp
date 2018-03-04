@@ -111,6 +111,8 @@ void ARankingManager::ReverseScorePlayers()
 
 	//UE_LOG(LogTemp, Warning, TEXT("end = %d - lastIndex = %s %d"), i, TCHAR_TO_UTF8(*NamePlayers[i]), ScorePlayers[i]);
 	
+	int init = (ScorePlayers.Num() - 1) > 9 ? 9 : (ScorePlayers.Num() - 1);
+
 	for (int i = ScorePlayers.Num() - 1; i >= 0; i--)
 	{
 		NewScorePlayers.Add(ScorePlayers[i]);

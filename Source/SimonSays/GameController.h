@@ -36,6 +36,7 @@ public:
 
 private:
 	TArray<UBallGUI*> AllBallsGUI;
+	UPROPERTY()
 	UMaterial* BallMaterialInterface;
 	GameType GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
@@ -64,7 +65,9 @@ private:
 	bool StrategyReadAndCheckPlayerSecuence();
 
 	// Sounds.
+	UPROPERTY()
 	USoundBase* SoundOk;
+	UPROPERTY()
 	USoundBase* SoundWrong;
 
 	UFUNCTION()

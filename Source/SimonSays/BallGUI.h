@@ -34,13 +34,15 @@ public:
 	float TimeLightOn; // Time with the light on.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
 	USoundBase* SoundTurnOn; // Sound when ball turn on.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
+	FString NameActionButton;
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	// Executed when component destroyed.
 	virtual void OnComponentDestroyed(bool bDestroyingHierarchy) override;
 	// Initialize the ball with a template material.
-	void InitializeBall(UMaterial* BallMaterialInterface);
+	void InitializeBall(UMaterial* BallMaterialInterface, UInputComponent* ic);
 
 	BallState GetBallState() const;
 	void TurnOn(bool EmitSound);
@@ -51,8 +53,13 @@ public:
 	bool IsClickedInBall() const;
 	void ResetClickedInBall();
 private:
+	UPROPERTY()
 	UMaterialInstanceDynamic* DynamicMatEmit;
+	UPROPERTY()
 	TWeakObjectPtr<AActor> Sphere;
+	UPROPERTY()
+	UInputComponent* InputComp;
+
 	BallState State;
 
 	bool IsInitialized;
@@ -65,6 +72,7 @@ private:
 	float CurrentEmision;
 	float EndEmission;
 
+	void InitializeGamepad();
 	void GrabReferences(UMaterial* BallMaterialInterface);
 	void CreateDynamicMaterial(UMaterial* BallMaterialInterface);
 	void SetReferences();
@@ -72,6 +80,7 @@ private:
 	void UpdateEmissionOn(float DeltaTime);
 	void UpdateWaitOn(float DeltaTime);
 	void UpdateEmissionOff(float DeltaTime);
+	void OnPushInBall();
 
 	UFUNCTION()
 	void OnClicInBall(AActor* Target, FKey ButtonPressed);

@@ -30,9 +30,21 @@ void UBallGUI::BeginPlay()
 	State = BALL_OFF;
 }
 
-void UBallGUI::InitializeBall(UMaterial* BallMaterialInterface)
+void UBallGUI::InitializeGamepad()
 {
+	if (InputComp)
+	{
+		//Do whatever with myInputComp if it's valid.
+		FName NameActionBt = FName(*NameActionButton);
+		InputComp->BindAction(NameActionBt, EInputEvent::IE_Released, this, &UBallGUI::OnPushInBall);//"ActionA"
+	}
+}
+
+void UBallGUI::InitializeBall(UMaterial* BallMaterialInterface, UInputComponent* ic)
+{
+	InputComp = ic;
 	Super::GetOwner()->OnClicked.AddDynamic(this, &UBallGUI::OnClicInBall);
+	InitializeGamepad();
 
 	GrabReferences(BallMaterialInterface);
 	SetReferences();
@@ -181,6 +193,11 @@ void UBallGUI::ResetClickedInBall()
 
 void UBallGUI::OnClicInBall(AActor* Target, FKey ButtonPressed)
 {
+	OnPushInBall();
+}
+
+void UBallGUI::OnPushInBall()
+{
 	if (IsEnableClick && IsInTurnOff())
 	{
 		// When player click on ball: turn on the ball and mark as clicked.
@@ -198,5 +215,10 @@ void UBallGUI::OnComponentDestroyed(bool bDestroyingHierarchy)
 	{
 		delete DynamicMatEmit;
 		DynamicMatEmit = NULL;
+	}
+
+	if (InputComp != NULL)
+	{
+		InputComp = NULL;
 	}
 }

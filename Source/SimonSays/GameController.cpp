@@ -81,7 +81,7 @@ void AGameController::BeginPlay()
 	for (AActor* ball : AllBalls)
 	{
 		ball->GetComponents<UBallGUI>(BallComponents);
-		BallComponents[0]->InitializeBall(BallMaterialInterface);
+		BallComponents[0]->InitializeBall(BallMaterialInterface, InputComponent);
 		AllBallsGUI.Add(BallComponents[0]);
 	}
 	
