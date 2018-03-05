@@ -1,5 +1,5 @@
 "../../../Engine/Binaries/Win64/UE4Editor.version" 1
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/SimonSays.uproject" 2
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/SimonSays.uproject" 2
 "../../../Engine/Plugins/2D/Paper2D/Paper2D.uplugin" 3
 "../../../Engine/Plugins/Animation/LiveLink/LiveLink.uplugin" 4
 "../../../Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin" 5
@@ -168,124 +168,124 @@
 "C:/Users/sergi/AppData/Local/UnrealEngine/4.19/Saved/Config/Windows/Manifest.ini" 168
 "../../../Engine/Config/Base.ini" 169
 "../../../Engine/Config/BaseEngine.ini" 170
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultEngine.ini" 171
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultEngine.ini" 171
 "../../../Engine/Config/Windows/WindowsEngine.ini" 172
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Engine.ini" 173
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Engine.ini" 174
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Engine.ini" 173
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Engine.ini" 174
 "../../../Engine/Config/BaseGame.ini" 175
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultGame.ini" 176
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Game.ini" 177
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Game.ini" 178
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultGame.ini" 176
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Game.ini" 177
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Game.ini" 178
 "../../../Engine/Config/BaseInput.ini" 179
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultInput.ini" 180
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Input.ini" 181
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Input.ini" 182
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultInput.ini" 180
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Input.ini" 181
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Input.ini" 182
 "../../../Engine/Config/BaseEditor.ini" 183
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultEditor.ini" 184
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Editor.ini" 185
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Editor.ini" 186
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultEditor.ini" 184
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Editor.ini" 185
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Editor.ini" 186
 "../../../Engine/Config/BaseEditorPerProjectUserSettings.ini" 187
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultEditorPerProjectUserSettings.ini" 188
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/EditorPerProjectUserSettings.ini" 189
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/EditorPerProjectUserSettings.ini" 190
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultEditorPerProjectUserSettings.ini" 188
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/EditorPerProjectUserSettings.ini" 189
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/EditorPerProjectUserSettings.ini" 190
 "../../../Engine/Config/BaseEditorSettings.ini" 191
 "C:/Users/sergi/AppData/Local/UnrealEngine/4.19/Saved/Config/Windows/EditorSettings.ini" 192
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/EditorSettings.ini" 193
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/EditorSettings.ini" 193
 "../../../Engine/Config/BaseEditorLayout.ini" 194
 "C:/Users/sergi/AppData/Local/UnrealEngine/4.19/Saved/Config/Windows/EditorLayout.ini" 195
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/EditorLayout.ini" 196
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/EditorLayout.ini" 196
 "../../../Engine/Config/BaseEditorKeyBindings.ini" 197
 "C:/Users/sergi/AppData/Local/UnrealEngine/4.19/Saved/Config/Windows/EditorKeyBindings.ini" 198
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/EditorKeyBindings.ini" 199
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/EditorKeyBindings.ini" 199
 "../../../Engine/Config/BaseCompat.ini" 200
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Compat.ini" 201
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Compat.ini" 202
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Compat.ini" 201
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Compat.ini" 202
 "../../../Engine/Config/BaseLightmass.ini" 203
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Lightmass.ini" 204
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Lightmass.ini" 205
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Lightmass.ini" 204
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Lightmass.ini" 205
 "../../../Engine/Config/BaseScalability.ini" 206
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Scalability.ini" 207
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Scalability.ini" 208
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Scalability.ini" 207
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Scalability.ini" 208
 "../../../Engine/Config/BaseHardware.ini" 209
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Hardware.ini" 210
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Hardware.ini" 211
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Hardware.ini" 210
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Hardware.ini" 211
 "../../../Engine/Config/BaseGameUserSettings.ini" 212
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/GameUserSettings.ini" 213
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GameUserSettings.ini" 214
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/GameUserSettings.ini" 213
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GameUserSettings.ini" 214
 "../../../Engine/Plugins/2D/Paper2D/Config/BasePaper2D.ini" 215
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/Paper2D.ini" 216
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Paper2D.ini" 217
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LiveLink.ini" 218
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LightPropagationVolume.ini" 219
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CLionSourceCodeAccess.ini" 220
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CodeLiteSourceCodeAccess.ini" 221
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GitSourceControl.ini" 222
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/KDevelopSourceCodeAccess.ini" 223
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/NullSourceCodeAccess.ini" 224
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/PerforceSourceControl.ini" 225
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/SubversionSourceControl.ini" 226
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/UObjectPlugin.ini" 227
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/VisualStudioCodeSourceCodeAccess.ini" 228
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/VisualStudioSourceCodeAccess.ini" 229
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/XCodeSourceCodeAccess.ini" 230
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AssetManagerEditor.ini" 231
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CryptoKeys.ini" 232
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/DataValidation.ini" 233
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/FacialAnimation.ini" 234
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GameplayTagsEditor.ini" 235
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/MobileLauncherProfileWizard.ini" 236
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/PluginBrowser.ini" 237
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/SpeedTreeImporter.ini" 238
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/DatasmithContent.ini" 239
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AlembicImporter.ini" 240
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CharacterAI.ini" 241
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/HTML5Networking.ini" 242
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ProxyLODPlugin.ini" 243
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AndroidMedia.ini" 244
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AvfMedia.ini" 245
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ImgMedia.ini" 246
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LinearTimecode.ini" 247
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/MediaCompositing.ini" 248
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/MediaPlayerEditor.ini" 249
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/WmfMedia.ini" 250
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/TcpMessaging.ini" 251
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/UdpMessaging.ini" 252
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ActorSequence.ini" 253
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LevelSequenceEditor.ini" 254
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/MatineeToLevelSequence.ini" 255
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/NetcodeUnitTest.ini" 256
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/NUTUnrealEngine4.ini" 257
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemGooglePlay.ini" 258
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemIOS.ini" 259
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystem.ini" 260
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemNull.ini" 261
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemUtils.ini" 262
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AndroidDeviceProfileSelector.ini" 263
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AndroidMoviePlayer.ini" 264
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AndroidPermission.ini" 265
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AppleARKit.ini" 266
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AppleMoviePlayer.ini" 267
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ArchVisCharacter.ini" 268
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/AudioCapture.ini" 269
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CableComponent.ini" 270
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/CustomMeshComponent.ini" 271
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ExampleDeviceProfileSelector.ini" 272
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GoogleCloudMessaging.ini" 273
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ImmediatePhysics.ini" 274
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/IOSDeviceProfileSelector.ini" 275
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LinuxDeviceProfileSelector.ini" 276
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/LocationServicesBPLibrary.ini" 277
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/MobilePatchingUtils.ini" 278
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/Paper2D.ini" 216
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Paper2D.ini" 217
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LiveLink.ini" 218
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LightPropagationVolume.ini" 219
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CLionSourceCodeAccess.ini" 220
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CodeLiteSourceCodeAccess.ini" 221
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GitSourceControl.ini" 222
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/KDevelopSourceCodeAccess.ini" 223
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/NullSourceCodeAccess.ini" 224
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/PerforceSourceControl.ini" 225
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/SubversionSourceControl.ini" 226
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/UObjectPlugin.ini" 227
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/VisualStudioCodeSourceCodeAccess.ini" 228
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/VisualStudioSourceCodeAccess.ini" 229
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/XCodeSourceCodeAccess.ini" 230
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AssetManagerEditor.ini" 231
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CryptoKeys.ini" 232
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/DataValidation.ini" 233
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/FacialAnimation.ini" 234
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GameplayTagsEditor.ini" 235
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/MobileLauncherProfileWizard.ini" 236
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/PluginBrowser.ini" 237
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/SpeedTreeImporter.ini" 238
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/DatasmithContent.ini" 239
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AlembicImporter.ini" 240
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CharacterAI.ini" 241
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/HTML5Networking.ini" 242
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ProxyLODPlugin.ini" 243
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AndroidMedia.ini" 244
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AvfMedia.ini" 245
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ImgMedia.ini" 246
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LinearTimecode.ini" 247
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/MediaCompositing.ini" 248
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/MediaPlayerEditor.ini" 249
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/WmfMedia.ini" 250
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/TcpMessaging.ini" 251
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/UdpMessaging.ini" 252
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ActorSequence.ini" 253
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LevelSequenceEditor.ini" 254
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/MatineeToLevelSequence.ini" 255
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/NetcodeUnitTest.ini" 256
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/NUTUnrealEngine4.ini" 257
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemGooglePlay.ini" 258
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemIOS.ini" 259
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystem.ini" 260
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemNull.ini" 261
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OnlineSubsystemUtils.ini" 262
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AndroidDeviceProfileSelector.ini" 263
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AndroidMoviePlayer.ini" 264
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AndroidPermission.ini" 265
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AppleARKit.ini" 266
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AppleMoviePlayer.ini" 267
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ArchVisCharacter.ini" 268
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/AudioCapture.ini" 269
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CableComponent.ini" 270
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/CustomMeshComponent.ini" 271
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ExampleDeviceProfileSelector.ini" 272
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GoogleCloudMessaging.ini" 273
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ImmediatePhysics.ini" 274
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/IOSDeviceProfileSelector.ini" 275
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LinuxDeviceProfileSelector.ini" 276
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/LocationServicesBPLibrary.ini" 277
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/MobilePatchingUtils.ini" 278
 "../../../Engine/Plugins/Runtime/Oculus/OculusVR/Config/BaseOculusVR.ini" 279
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/OculusVR.ini" 280
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/OculusVR.ini" 281
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/OculusVR.ini" 280
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/OculusVR.ini" 281
 "../../../Engine/Plugins/Runtime/PhysXVehicles/Config/BasePhysXVehicles.ini" 282
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/PhysXVehicles.ini" 283
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/PhysXVehicles.ini" 284
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/ProceduralMeshComponent.ini" 285
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/RuntimePhysXCooking.ini" 286
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/SteamVR.ini" 287
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/WindowsMoviePlayer.ini" 288
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/PhysXVehicles.ini" 283
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/PhysXVehicles.ini" 284
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/ProceduralMeshComponent.ini" 285
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/RuntimePhysXCooking.ini" 286
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/SteamVR.ini" 287
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/WindowsMoviePlayer.ini" 288
 "../../../Engine/Binaries/Win64/UE4Editor.modules" 289
 "../../../Engine/Binaries/Win64/Android/UE4Editor.modules" 290
 "../../../Engine/Binaries/Win64/HTML5/UE4Editor.modules" 291
@@ -348,11 +348,11 @@
 "../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor.modules" 348
 "../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor.modules" 349
 "../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor.modules" 350
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Binaries/Win64/UE4Editor.modules" 351
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Binaries/Win64/UE4Editor.modules" 351
 "../../../Engine/Content/Certificates/ThirdParty/cacert.pem" 352
 "../../../Engine/Config/BaseDeviceProfiles.ini" 353
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/DeviceProfiles.ini" 354
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/DeviceProfiles.ini" 355
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/DeviceProfiles.ini" 354
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/DeviceProfiles.ini" 355
 "../../../Engine/Config/ConsoleVariables.ini" 356
 "..\..\..\Engine\Content\Internationalization\icudt53l\lang\ar.res" 357
 "..\..\..\Engine\Content\Internationalization\icudt53l\lang\ja.res" 358
@@ -1462,8 +1462,8 @@
 "../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 1462
 "../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 1463
 "../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 1464
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GameplayTagsList.ini" 1465
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/GameplayTags.ini" 1466
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GameplayTagsList.ini" 1465
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/GameplayTags.ini" 1466
 "../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 1467
 "../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 1468
 "../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 1469
@@ -1479,7 +1479,7 @@
 "../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 1479
 "../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 1480
 "../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 1481
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/TemplateDefs.ini" 1482
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/TemplateDefs.ini" 1482
 "../../../Engine/Content/EngineFonts/Roboto.uasset" 1483
 "../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 1484
 "../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 1485
@@ -1505,15 +1505,15 @@
 "../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_AO.uasset" 1505
 "../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Color.uasset" 1506
 "../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Normal.uasset" 1507
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/2657c409.bin" 1508
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/866581fd.bin" 1509
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/8c0e1344.bin" 1510
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/c9e91a3f.bin" 1511
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/50a675f9.bin" 1512
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/52ed2538.bin" 1513
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/2f5244c7.bin" 1514
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/f0d5030c.bin" 1515
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/1f683343.bin" 1516
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/2657c409.bin" 1508
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/866581fd.bin" 1509
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/8c0e1344.bin" 1510
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/c9e91a3f.bin" 1511
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/50a675f9.bin" 1512
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/52ed2538.bin" 1513
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/2f5244c7.bin" 1514
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/f0d5030c.bin" 1515
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/1f683343.bin" 1516
 "..\..\..\Engine\Content\Internationalization\icudt53l\coll\ucadata.icu" 1517
 "..\..\..\Engine\Content\Internationalization\icudt53l\nfc.nrm" 1518
 "..\..\..\Engine\Content\Internationalization\icudt53l\coll\en.res" 1519
@@ -1593,16 +1593,16 @@
 "../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 1593
 "../../../Engine/Content/EngineMeshes/Cylinder.uasset" 1594
 "../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 1595
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Materials/BigMarble.uasset" 1596
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/SoundOK.uasset" 1597
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/SoundWrong.uasset" 1598
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Materials/BigMarble.uasset" 1596
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/SoundOK.uasset" 1597
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/SoundWrong.uasset" 1598
 "C:/Users/sergi/AppData/Local/UnrealEngine/4.19/Saved/Config/Windows/SourceControlSettings.ini" 1599
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/SourceControlSettings.ini" 1600
-"C:/Users/sergi/Documents/Unreal Projects/SimonSays/Saved/Config/Windows/SourceControlSettings.ini" 1601
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Encryption.ini" 1602
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/Crypto.ini" 1603
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/InternationalizationExport.ini" 1604
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/TranslationPickerSettings.ini" 1605
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/SourceControlSettings.ini" 1600
+"C:/Users/sergi/Documents/Unreal Projects/Simon-Says/Saved/Config/Windows/SourceControlSettings.ini" 1601
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Encryption.ini" 1602
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/Crypto.ini" 1603
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/InternationalizationExport.ini" 1604
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/TranslationPickerSettings.ini" 1605
 "../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 1606
 "../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 1607
 "../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 1608
@@ -1610,9 +1610,9 @@
 "../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 1610
 "../../Plugins/Media/MediaCompositing/Content/DefaultMediaPlaneMaterial.uasset" 1611
 "../../Plugins/Media/MediaCompositing/Content/DefaultMediaPlaneTexture.uasset" 1612
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/UnitTestStats.ini" 1613
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/Config/CoalescedSourceConfigs/UnitTest.ini" 1614
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Config/DefaultEngine.ini" 1615
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/UnitTestStats.ini" 1613
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/Config/CoalescedSourceConfigs/UnitTest.ini" 1614
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Config/DefaultEngine.ini" 1615
 "../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 1616
 "../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 1617
 "../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 1618
@@ -1630,207 +1630,217 @@
 "../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 1630
 "../../../Engine/Content/EngineFonts/RobotoTiny.uasset" 1631
 "../../../Engine/Content/EngineFonts/Faces/RobotoTiny.uasset" 1632
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/311563bb.bin" 1633
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/c90e3f55.bin" 1634
-"../../../Engine/Content/BasicShapes/Cube.uasset" 1635
-"../../../Engine/Content/BasicShapes/Sphere.uasset" 1636
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1637
-"../../../Engine/Content/BasicShapes/Cone.uasset" 1638
-"../../../Engine/Content/BasicShapes/Plane.uasset" 1639
-"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 1640
-"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 1641
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Intermediate/AssetRegistryCache/cfeb52af.bin" 1642
-"../../../Engine/Config/HTML5/HTML5Engine.ini" 1643
-"../../../Engine/Content/Tutorial/Foliage/Foliage_Intro_Tutorial.uasset" 1644
-"../../../Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset" 1645
-"../../../Engine/Content/Tutorial/Foliage/Foliage_Using_The_Tool_Tutorial.uasset" 1646
-"../../../Engine/Content/Tutorial/Foliage/Foliage_Settings_Tutorial.uasset" 1647
-"../../../Engine/Content/Tutorial/Paper2D/SpriteEditorTutorial.uasset" 1648
-"../../../Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DSprite_TutorialIcon.uasset" 1649
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/9/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__F3F73AD5018AA01EB6FCED18699A4589EE6849A8.udd" 1650
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/2/5/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__8DDF3FD11F6C7FD4061CACCFB834F128DEBEB618.udd" 1651
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/6/0/AUDIO_0005_0000_OGG_0001_F1D95E874C1522DA21C2A2BE0FCB10F3.udd" 1652
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/4/1/AUDIO_0005_0000_OGG_0001_D990300B4C375E9D8F5F099501F28DA1.udd" 1653
-"../../../Engine/Content/Tutorial/SubEditors/PersonaAnimEditorWalkThrough.uasset" 1654
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_ShowSkeletalMeshes_40x.uasset" 1655
-"../../../Engine/Content/Tutorial/SubEditors/PersonaAnimBlueprintEditorWalkthrough.uasset" 1656
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_AnimBlueprint.uasset" 1657
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset" 1658
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Idle.uasset" 1659
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Skeleton.uasset" 1660
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Walk_Fwd.uasset" 1661
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 1662
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialCharacter.uasset" 1663
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.uasset" 1664
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Mat.uasset" 1665
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_PhysicsAsset.uasset" 1666
-"../../../Engine/Content/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview.uasset" 1667
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset" 1668
-"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintInterfacesEditorOverview.uasset" 1669
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintInterface_64x.uasset" 1670
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Interface.uasset" 1671
-"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset" 1672
-"../../../Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset" 1673
-"../../../Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset" 1674
-"../../../Engine/Content/Tutorial/SubEditors/StaticMeshEditorTutorial.uasset" 1675
-"../../../Engine/Content/EngineMeshes/Cube.uasset" 1676
-"../../../Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset" 1677
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset" 1678
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/SM_ColorCalibrator.uasset" 1679
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset" 1680
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoat.uasset" 1681
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoatBlack.uasset" 1682
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ColorGrid.uasset" 1683
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/Color_checker.uasset" 1684
-"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uasset" 1685
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Blueprints/PuzzleGameMode.uasset" 1686
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Blueprints/PuzzlePlayerCharacter.uasset" 1687
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Blueprints/PuzzleBlock.uasset" 1688
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Blueprints/PuzzleBlockGrid.uasset" 1689
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Meshes/PuzzleCube.uasset" 1690
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Meshes/BlueMaterial.uasset" 1691
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Meshes/BaseMaterial.uasset" 1692
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Meshes/OrangeMaterial.uasset" 1693
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Blueprints/PuzzlePlayerController.uasset" 1694
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Blueprints/MyGameInstance.uasset" 1695
-"../../../Engine/Content/EngineMaterials/EditorBrushMaterial.uasset" 1696
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 1697
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 1698
-"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 1699
-"../../../Engine/Content/EngineDebugMaterials/ClothMaterial_WF.uasset" 1700
-"../../../Engine/Content/EngineDebugMaterials/ClothMaterial.uasset" 1701
-"../../../Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset" 1702
-"../../../Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset" 1703
-"../../../Engine/Content/EngineDebugMaterials/GeomMaterial.uasset" 1704
-"../../../Engine/Content/EditorResources/BSPVertex.uasset" 1705
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 1706
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 1707
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 1708
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 1709
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 1710
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 1711
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 1712
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 1713
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 1714
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 1715
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 1716
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 1717
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 1718
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 1719
-"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 1720
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 1721
-"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 1722
-"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 1723
-"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 1724
-"../../../Engine/Content/Maps/Entry.umap" 1725
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Maps/MainMenu.umap" 1726
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 1727
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 1728
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 1729
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 1730
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1731
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1732
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1733
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1734
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1735
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Geometry/Meshes/1M_BlackCube.uasset" 1736
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Materials/Black.uasset" 1737
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Blueprints/BP_MainMenu.uasset" 1738
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/5/3/STATICMESH_8CAD439CF4B14211ACC831AE9C7C98BC_228332BAE0224DD294E232B87D83948F1$__6C0F6DF699DB53B2D74213FD07230B95C14008BE.udd" 1739
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/2/8/NAVCOLLISION_B89838347A4348138EE337A847529C5C_NAVCOLLISION_X_305B14DD4F1380442__F0ED25A1C81BD9CD1ABD20725B69BF43D8324499.udd" 1740
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/0/6/PHYSX_8E2B126ED2B644F1BBF553FEF6480DB4_PHYSXPC_305B14DD4F1380442E227CA60EB830F__F8485374A164786776362AC6047CE12F72F59FBD.udd" 1741
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/0/2/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__D1E54AADB387CF622B8E9B14427AF752D6A4D33E.udd" 1742
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_CDB2CBE24FAC370B5196BEA60C774__666A86ECA35ADEB4ECFC86D03638D08B4548C04F.udd" 1743
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/0/5/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__F172A6AC539B107EDAF47CDEC91572773BD231A1.udd" 1744
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/5/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__A5BE86B96218A96244E9995665CF4EAC8004DF6C.udd" 1745
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/4/0/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__26FB70937A1CBD7B882790F6554CD235BD1D1E92.udd" 1746
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/7/4/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__4B502AA6ACA2FF14A5D93D00B28488DCBEE82280.udd" 1747
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__079252BA8338F04CF8641566210BD01641EFEAEB.udd" 1748
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/8/7/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__F4B24C501CC77EEC0CAC0587E01B8D4DB8CDFAF8.udd" 1749
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/7/9/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_714F7E4E469DDC288EB85E916629A14F__F11913E2E1117BF22329E62C7099F354964C7CF9.udd" 1750
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Maps/Records.umap" 1751
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/5/4/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__BB278C2A6DE5A81F237AF5D05EA720830E671583.udd" 1752
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/3/7/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__D65B4911ADEF9110CF85D6F019CA23B370851CB0.udd" 1753
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/1/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_7B253A5343A08F5340F81E97EB61358E_0__D73BEBD61FEAD1A7A0A17CC5994B8133382CF917.udd" 1754
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/2/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__1B58A2EC928632DC4287E8AD5F04EEF87ABF9A0A.udd" 1755
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/1/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__44E98BFD4312DD10F4D98C51EA009471DAF8C8D1.udd" 1756
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/5/8/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__E00949CF8282EC6AF782DFCDB072BFD4396DD378.udd" 1757
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Blueprints/BP_Records.uasset" 1758
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/4/2/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__ED185E1065224C4301BEE6E2D9D0B0F92D68A5A8.udd" 1759
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/2/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__59E5F7D7DFFA87EB8B8B05E62E0E502F3C60B916.udd" 1760
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/6/7/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_0F094CCA42993FD39421F089237DD__F3D11F164E6491817AF29FF1CDFC859C2DFD6D8D.udd" 1761
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/3/9/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__4EBDF105DA65970D011044D0EB13C30288A55FF1.udd" 1762
-"../../../Engine/Content/EditorResources/EmptyActor.uasset" 1763
-"../../../Engine/Content/EditorResources/LightIcons/S_LightError.uasset" 1764
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/2/7/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A17C6F7F04DA58D32FC4843BBF0C6BDE10B2AB63.udd" 1765
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/8/6/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A6D7858DC18351414FDC47732574E78484AEE7DE.udd" 1766
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Maps/Game.umap" 1767
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Maps/Game_BuiltData.uasset" 1768
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Materials/BlackWithLights.uasset" 1769
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/Sound01.uasset" 1770
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/Sound02.uasset" 1771
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/Sound03.uasset" 1772
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Puzzle/Sounds/Sound04.uasset" 1773
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Blueprints/BP_HUDGame.uasset" 1774
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSays/UI/life.uasset" 1775
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/3/7/AUDIO_0005_0000_OGG_0001_A60A5D124C2E5E2C0121C8867D91C8B8.udd" 1776
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/7/5/AUDIO_0005_0000_OGG_0001_A946F3AF49E2A9A8B9EFB1AAA4F700C2.udd" 1777
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/1/0/AUDIO_0005_0000_OGG_0001_29D076C3414C831063C9CB888CB3C29A.udd" 1778
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/7/1/AUDIO_0005_0000_OGG_0001_91D9009D4EE5F9B3B3F398819B773504.udd" 1779
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/1/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_19D691C04C118A70281644A40D108__0575A9E505A3D3F3C5F3A6D6AFD7D074F29F4724.udd" 1780
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/0/8/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_1FE2F2CE4DC29F2BAF180E96C8E8C__880E2E5DF5047AEE8855D322147CE2B243B34FB6.udd" 1781
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/9/4/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_F4025BB84FCE5DE126C21D856B56043F__94E71B7340EED91119BE67870A45FD5F4D9458E7.udd" 1782
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/7/9/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_19D691C04C118A70281644A40D108__C21B56CA30FFCCB1C5EAA9215A510E18DC5EDCC0.udd" 1783
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/2/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_19D691C04C118A70281644A40D108__844EA49E9DA5A33BACB631E6162C975BD0FF7923.udd" 1784
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/4/7/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_19D691C04C118A70281644A40D108__8FB91971848D58748D4EB37CB074E5A4FB1E8A2C.udd" 1785
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/6/0/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_68E4414E4262D287F494DE97EDB485CD__1D3288BD559B44F3BC945C2D6F7FDA2AB5EBB21A.udd" 1786
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_F4025BB84FCE5DE126C21D856B56043F__7402B2C660F83A9A6C7D7DE5532925A8DD705EAA.udd" 1787
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/8/0/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_BFFC3E9143AA4B84DF1FC7B1EF455F45_0__EF05E5F8299EF4E3AF9A00D0ACCCBB50E14D24DD.udd" 1788
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/6/1/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_F4025BB84FCE5DE126C21D856B56043F__733580AA78E6C0FCC72A137D437FA86F5974B192.udd" 1789
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/6/7/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_F4025BB84FCE5DE126C21D856B56043F__77FF75FB4DA7B3AD1EF9097E03041764FDFCC3F3.udd" 1790
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/6/9/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_249277AF499E4C16FBAF56B64EB0755B_0__2F5F18B255BBE3201AF27139F307903DFF053446.udd" 1791
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/5/1/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_BFFC3E9143AA4B84DF1FC7B1EF455F45_0__4E3AA7CEC56FE4B07BE622304A2E4A853D2640E8.udd" 1792
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/0/6/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5E081ADA48E3A300A66A6F8B3E13C__C51A04AAECF3D5AE76E8096056D19CC9888E5E34.udd" 1793
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/9/8/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A88C32127AB3DBDFE16C4EE3DBDDEB070A25E875.udd" 1794
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/7/8/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_BFFC3E9143AA4B84DF1FC7B1EF455F45_0__96F581DCBDE2497A9E6CBFBF7B54C44114E4EA20.udd" 1795
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/0/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_BFFC3E9143AA4B84DF1FC7B1EF455F45_0__BDF3410471F4ABA9E5C648C5266005FB3E80E93D.udd" 1796
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/0/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_562D4CDF4C13B0F0D3DB80960CCEF__B66A0184360F311B84D9BE90E0AEE8367280F39F.udd" 1797
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/5/7/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5E081ADA48E3A300A66A6F8B3E13C__BAC920E324833C5E6A4A0C9BE1A33B53C6817397.udd" 1798
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/2/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5E081ADA48E3A300A66A6F8B3E13C__1852ABA177EE0B65F9D41E77B8B132A677A787FA.udd" 1799
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/9/2/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__0054AD720F94A6DA4A8E9122E5AF40E1EE7777E7.udd" 1800
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/5/3/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5E081ADA48E3A300A66A6F8B3E13C__40941F13E171A94207EDA6F2CB93E25E48D766A3.udd" 1801
-"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/3/6/TEXTURE_814DCC3DC72143F49509781513CB9855_BGRA8_94AC0CBD44971DCEBAD44DAB05A5952__6C6F740C16A464BB6ACE09C3899C117D61C91EA9.udd" 1802
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Maps/Credits.umap" 1803
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/SimonSaysBP/Blueprints/BP_CreditsGame.uasset" 1804
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Maps/PuzzleExampleMap.umap" 1805
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Maps/PuzzleExampleMap_BuiltData.uasset" 1806
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Geometry/Meshes/1M_Cube.uasset" 1807
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Geometry/Meshes/CubeMaterial.uasset" 1808
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part8-EverythingElse.uasset" 1809
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part7-LevelBlueprint.uasset" 1810
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part5-GameMode.uasset" 1811
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part6-Controller.uasset" 1812
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part2b-BlockBLueprintComponents.uasset" 1813
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part3-GridBlueprint.uasset" 1814
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part4-GridBluepint2.uasset" 1815
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/PuzzleOverview.uasset" 1816
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Geometry/Meshes/TemplateFloor.uasset" 1817
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/Geometry/Meshes/1M_Cube_Chamfer.uasset" 1818
-"../../../Engine/Content/Tutorial/Landscape/Landscape_Manage_Mode.uasset" 1819
-"../../../Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset" 1820
-"../../../Engine/Content/Tutorial/SubEditors/MaterialEditorTutorial.uasset" 1821
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialMaterial.uasset" 1822
-"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintMacroLibrariesEditorOverview.uasset" 1823
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintMacroLibrary_64x.uasset" 1824
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset" 1825
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part1-Overview.uasset" 1826
-"../../../../../../Users/sergi/Documents/Unreal Projects/SimonSays/Content/PuzzleBP/Tutorial/Part2-BlockBlueprint.uasset" 1827
-"../../../Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset" 1828
-"../../../Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset" 1829
-"../../../Engine/Content/Tutorial/Landscape/Landscape_Sculpt_Mode.uasset" 1830
-"../../../Engine/Content/Tutorial/SubEditors/ParticleSystemEditorTutorial.uasset" 1831
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem.uasset" 1832
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset" 1833
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/T_SmokeSubUV_8X8.uasset" 1834
-"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/T_soft_smoke.uasset" 1835
-"../../../Engine/Content/Tutorial/Landscape/Landscape_Painting_Mode.uasset" 1836
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/311563bb.bin" 1633
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/c90e3f55.bin" 1634
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Backgrounds/fog.uasset" 1635
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Materials/BigMarbleE.uasset" 1636
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Materials/BlackWithLights.uasset" 1637
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/Sound01.uasset" 1638
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/Sound02.uasset" 1639
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/Sound03.uasset" 1640
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Sounds/Sound04.uasset" 1641
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSays/UI/life.uasset" 1642
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Blueprints/BP_CreditsGame.uasset" 1643
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Blueprints/BP_HUDGame.uasset" 1644
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Blueprints/BP_MainMenu.uasset" 1645
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Blueprints/BP_Records.uasset" 1646
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Blueprints/MyGameInstance.uasset" 1647
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Maps/Credits.umap" 1648
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Maps/Game.umap" 1649
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Maps/Game_BuiltData.uasset" 1650
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Maps/MainMenu.umap" 1651
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/SimonSaysBP/Maps/Records.umap" 1652
+"../../../Engine/Content/BasicShapes/Cube.uasset" 1653
+"../../../Engine/Content/BasicShapes/Sphere.uasset" 1654
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 1655
+"../../../Engine/Content/BasicShapes/Cone.uasset" 1656
+"../../../Engine/Content/BasicShapes/Plane.uasset" 1657
+"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 1658
+"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 1659
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Intermediate/AssetRegistryCache/cfeb52af.bin" 1660
+"../../../Engine/Config/HTML5/HTML5Engine.ini" 1661
+"../../../Engine/Content/Tutorial/Foliage/Foliage_Intro_Tutorial.uasset" 1662
+"../../../Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset" 1663
+"../../../Engine/Content/Tutorial/Foliage/Foliage_Using_The_Tool_Tutorial.uasset" 1664
+"../../../Engine/Content/Tutorial/Foliage/Foliage_Settings_Tutorial.uasset" 1665
+"../../../Engine/Content/Tutorial/Paper2D/SpriteEditorTutorial.uasset" 1666
+"../../../Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DSprite_TutorialIcon.uasset" 1667
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/9/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__F3F73AD5018AA01EB6FCED18699A4589EE6849A8.udd" 1668
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/2/5/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__8DDF3FD11F6C7FD4061CACCFB834F128DEBEB618.udd" 1669
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/6/0/AUDIO_0005_0000_OGG_0001_F1D95E874C1522DA21C2A2BE0FCB10F3.udd" 1670
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/4/1/AUDIO_0005_0000_OGG_0001_D990300B4C375E9D8F5F099501F28DA1.udd" 1671
+"../../../Engine/Content/Tutorial/SubEditors/PersonaAnimEditorWalkThrough.uasset" 1672
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_ShowSkeletalMeshes_40x.uasset" 1673
+"../../../Engine/Content/Tutorial/SubEditors/PersonaAnimBlueprintEditorWalkthrough.uasset" 1674
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_AnimBlueprint.uasset" 1675
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset" 1676
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Idle.uasset" 1677
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Skeleton.uasset" 1678
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Walk_Fwd.uasset" 1679
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 1680
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialCharacter.uasset" 1681
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.uasset" 1682
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Mat.uasset" 1683
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_PhysicsAsset.uasset" 1684
+"../../../Engine/Content/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview.uasset" 1685
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset" 1686
+"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintInterfacesEditorOverview.uasset" 1687
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintInterface_64x.uasset" 1688
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Interface.uasset" 1689
+"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset" 1690
+"../../../Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset" 1691
+"../../../Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset" 1692
+"../../../Engine/Content/Tutorial/SubEditors/StaticMeshEditorTutorial.uasset" 1693
+"../../../Engine/Content/EngineMeshes/Cube.uasset" 1694
+"../../../Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset" 1695
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset" 1696
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/SM_ColorCalibrator.uasset" 1697
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset" 1698
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoat.uasset" 1699
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoatBlack.uasset" 1700
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_ColorGrid.uasset" 1701
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/Color_checker.uasset" 1702
+"../../../Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uasset" 1703
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Blueprints/PuzzleGameMode.uasset" 1704
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Blueprints/PuzzlePlayerCharacter.uasset" 1705
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Blueprints/PuzzleBlock.uasset" 1706
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Blueprints/PuzzleBlockGrid.uasset" 1707
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Meshes/PuzzleCube.uasset" 1708
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Meshes/BlueMaterial.uasset" 1709
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Meshes/BaseMaterial.uasset" 1710
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Puzzle/Meshes/OrangeMaterial.uasset" 1711
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Blueprints/PuzzlePlayerController.uasset" 1712
+"../../../Engine/Content/EngineMaterials/EditorBrushMaterial.uasset" 1713
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 1714
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 1715
+"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 1716
+"../../../Engine/Content/EngineDebugMaterials/ClothMaterial_WF.uasset" 1717
+"../../../Engine/Content/EngineDebugMaterials/ClothMaterial.uasset" 1718
+"../../../Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset" 1719
+"../../../Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset" 1720
+"../../../Engine/Content/EngineDebugMaterials/GeomMaterial.uasset" 1721
+"../../../Engine/Content/EditorResources/BSPVertex.uasset" 1722
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 1723
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 1724
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 1725
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 1726
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 1727
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 1728
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 1729
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 1730
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 1731
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 1732
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 1733
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 1734
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 1735
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 1736
+"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 1737
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 1738
+"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 1739
+"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 1740
+"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 1741
+"../../../Engine/Content/Maps/Entry.umap" 1742
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 1743
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 1744
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 1745
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 1746
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1747
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1748
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1749
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1750
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1751
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Geometry/Meshes/1M_BlackCube.uasset" 1752
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Materials/Black.uasset" 1753
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/5/3/STATICMESH_8CAD439CF4B14211ACC831AE9C7C98BC_228332BAE0224DD294E232B87D83948F1$__6C0F6DF699DB53B2D74213FD07230B95C14008BE.udd" 1754
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/2/8/NAVCOLLISION_B89838347A4348138EE337A847529C5C_NAVCOLLISION_X_305B14DD4F1380442__F0ED25A1C81BD9CD1ABD20725B69BF43D8324499.udd" 1755
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/0/6/PHYSX_8E2B126ED2B644F1BBF553FEF6480DB4_PHYSXPC_305B14DD4F1380442E227CA60EB830F__F8485374A164786776362AC6047CE12F72F59FBD.udd" 1756
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_CDB2CBE24FAC370B5196BEA60C774__666A86ECA35ADEB4ECFC86D03638D08B4548C04F.udd" 1757
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/0/2/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__D1E54AADB387CF622B8E9B14427AF752D6A4D33E.udd" 1758
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/0/5/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__F172A6AC539B107EDAF47CDEC91572773BD231A1.udd" 1759
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/7/4/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__4B502AA6ACA2FF14A5D93D00B28488DCBEE82280.udd" 1760
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/5/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__A5BE86B96218A96244E9995665CF4EAC8004DF6C.udd" 1761
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/8/7/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__F4B24C501CC77EEC0CAC0587E01B8D4DB8CDFAF8.udd" 1762
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/4/0/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__26FB70937A1CBD7B882790F6554CD235BD1D1E92.udd" 1763
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_5574BA0440C5458FF36ED8A6EB327__079252BA8338F04CF8641566210BD01641EFEAEB.udd" 1764
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/7/9/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_714F7E4E469DDC288EB85E916629A14F__F11913E2E1117BF22329E62C7099F354964C7CF9.udd" 1765
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/3/7/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_1A766D4C4D52F7E47B73A7871AC29CF6__D65B4911ADEF9110CF85D6F019CA23B370851CB0.udd" 1766
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/5/4/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__BB278C2A6DE5A81F237AF5D05EA720830E671583.udd" 1767
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/1/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_7B253A5343A08F5340F81E97EB61358E_0__D73BEBD61FEAD1A7A0A17CC5994B8133382CF917.udd" 1768
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/1/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__44E98BFD4312DD10F4D98C51EA009471DAF8C8D1.udd" 1769
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/5/8/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__E00949CF8282EC6AF782DFCDB072BFD4396DD378.udd" 1770
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/4/2/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__ED185E1065224C4301BEE6E2D9D0B0F92D68A5A8.udd" 1771
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/3/9/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__4EBDF105DA65970D011044D0EB13C30288A55FF1.udd" 1772
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/2/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_EF787C89497BB859CD9FAE9B013296A1_0__1B58A2EC928632DC4287E8AD5F04EEF87ABF9A0A.udd" 1773
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/2/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_A41F0C5542287E5469A17290B0C3B__59E5F7D7DFFA87EB8B8B05E62E0E502F3C60B916.udd" 1774
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/6/7/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_0F094CCA42993FD39421F089237DD__F3D11F164E6491817AF29FF1CDFC859C2DFD6D8D.udd" 1775
+"../../../Engine/Content/EditorResources/EmptyActor.uasset" 1776
+"../../../Engine/Content/EditorResources/LightIcons/S_LightError.uasset" 1777
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/2/7/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A17C6F7F04DA58D32FC4843BBF0C6BDE10B2AB63.udd" 1778
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/8/6/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A6D7858DC18351414FDC47732574E78484AEE7DE.udd" 1779
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/7/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_AA7A1230478F921BDB7EB98DA5EA1__0B9CB98476423EF68ED545899D35DAF9EB068713.udd" 1780
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/5/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_AA7A1230478F921BDB7EB98DA5EA1__3CE8A96FFE89273D58931855377D1AA282CBB5DD.udd" 1781
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/1/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_AA7A1230478F921BDB7EB98DA5EA1__FD23F24D878272E4B413FE3299D7BDA3E32ABE51.udd" 1782
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/8/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_AA7A1230478F921BDB7EB98DA5EA1__D4E42A1F13E495EA670B99496BBE901E3C66326B.udd" 1783
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/7/4/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_AA7A1230478F921BDB7EB98DA5EA1__A7E61407CA749D80CE0D48FD998D42D85B682711.udd" 1784
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/3/7/AUDIO_0005_0000_OGG_0001_A60A5D124C2E5E2C0121C8867D91C8B8.udd" 1785
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/1/0/AUDIO_0005_0000_OGG_0001_29D076C3414C831063C9CB888CB3C29A.udd" 1786
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/7/5/AUDIO_0005_0000_OGG_0001_A946F3AF49E2A9A8B9EFB1AAA4F700C2.udd" 1787
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/7/1/AUDIO_0005_0000_OGG_0001_91D9009D4EE5F9B3B3F398819B773504.udd" 1788
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/2/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_F07B5D474823A1173F01D28AD4DAE__CF67C5EB9AE56DD271E03F73D8DD87024299606B.udd" 1789
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/3/2/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_F07B5D474823A1173F01D28AD4DAE__20A1064FB607BDCE7134ABEFC522BCFC9DADAC26.udd" 1790
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/8/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_F07B5D474823A1173F01D28AD4DAE__5C87AF42CD8DC34DDB304C627D189BB64DBD527C.udd" 1791
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/1/1/9/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_0E4BC7FE4AF3583FE2B53DB0D3677__3589E5E0C7A400CC810745A5D621ED186F554C94.udd" 1792
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/0/6/9/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_F07B5D474823A1173F01D28AD4DAE__DE4B0C493C69BBBE7201330E3BD4F9D7726CB731.udd" 1793
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/6/9/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_92CB3A1C4818F7D35D012D8FD2889295__578644EE2663F83D2B43C6B26BF09871207336D5.udd" 1794
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/6/5/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_B346F3C340EBC6F1D5BF50846D080E1D__E1F33636F80E571F1F99882C2C5FC0F701434A9E.udd" 1795
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/9/8/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM5_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__A88C32127AB3DBDFE16C4EE3DBDDEB070A25E875.udd" 1796
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/3/7/4/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_92CB3A1C4818F7D35D012D8FD2889295__6AFAFB5156AA490F67DBCA5359C94E42CBCD31C2.udd" 1797
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/1/1/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_98F181EF49EA98CFE20179A731D91102_0__BC3CF2DD027CDEE60FCBE5767CA95ABBBBABD3E6.udd" 1798
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/3/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_98F181EF49EA98CFE20179A731D91102_0__ACBB6E504CE4F476FBA934125C3220FA9ACBD1AD.udd" 1799
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/1/8/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_92CB3A1C4818F7D35D012D8FD2889295__BBF5A8F308521826CB15B87CF7CDCA3B10C664B1.udd" 1800
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/6/0/1/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_98F181EF49EA98CFE20179A731D91102_0__7280021DC82E3BB290E85D144E4CA489FBDB46B7.udd" 1801
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/0/2/4/TEXTURE_814DCC3DC72143F49509781513CB9855_DXT1_92CB3A1C4818F7D35D012D8FD2889295__75C09EDF751F81B9502A67513B3445027DBBA122.udd" 1802
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/8/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_98F181EF49EA98CFE20179A731D91102_0__B4E3E550884040BDC5E3228EC7E986FCD92FDC36.udd" 1803
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/5/1/3/TEXTURE_814DCC3DC72143F49509781513CB9855_G8_84C918EA4320EBB3DDF795BC0DE295CD_0__CA9A7165217F0217A6EBF6C03DBDE4FA897AAAA2.udd" 1804
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/5/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_572207BD4664EB4093B6AA8147524__AB6258B46B2E011A020AA672CA2FBF607FB2C9D0.udd" 1805
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/4/3/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_81C5ADBE42F16BFA69E181ACBB142__B9A21C62FB16A89237D1164DD16249BA1F1D5DF3.udd" 1806
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/8/0/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_81C5ADBE42F16BFA69E181ACBB142__6AF7F12CE98C2CF8F51CF1D3A52C414707615C0E.udd" 1807
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/7/4/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_81C5ADBE42F16BFA69E181ACBB142__58B6DFC943CA9617D62D23F7EF720A71526CB562.udd" 1808
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/8/5/TEXTURE_814DCC3DC72143F49509781513CB9855_AUTODXT_81C5ADBE42F16BFA69E181ACBB142__582BFB1B667C4886D2F1C2AB7E3298F4DED91324.udd" 1809
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/2/9/2/MATSM_E364A8CEB07D4CA78F49A40F1E532649_PCD3D_SM4_7__BC5N_NOCCBN_DEV_SL_DBUF_UN__0054AD720F94A6DA4A8E9122E5AF40E1EE7777E7.udd" 1810
+"C:/Users/sergi/AppData/Local/UnrealEngine/Common/DerivedDataCache/9/3/6/TEXTURE_814DCC3DC72143F49509781513CB9855_BGRA8_94AC0CBD44971DCEBAD44DAB05A5952__6C6F740C16A464BB6ACE09C3899C117D61C91EA9.udd" 1811
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Maps/PuzzleExampleMap.umap" 1812
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Maps/PuzzleExampleMap_BuiltData.uasset" 1813
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Geometry/Meshes/1M_Cube.uasset" 1814
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Geometry/Meshes/CubeMaterial.uasset" 1815
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part8-EverythingElse.uasset" 1816
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part7-LevelBlueprint.uasset" 1817
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part5-GameMode.uasset" 1818
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part6-Controller.uasset" 1819
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part2b-BlockBLueprintComponents.uasset" 1820
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part3-GridBlueprint.uasset" 1821
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part4-GridBluepint2.uasset" 1822
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/PuzzleOverview.uasset" 1823
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Geometry/Meshes/TemplateFloor.uasset" 1824
+"C:/Users/sergi/AppData/Local/Temp/UnrealShaderWorkingDir/B80C15C14BC4F6265800F4B5540B25FD/2/WorkerOutputOnly.out" 1825
+"C:/Users/sergi/AppData/Local/Temp/UnrealShaderWorkingDir/B80C15C14BC4F6265800F4B5540B25FD/0/WorkerOutputOnly.out" 1826
+"C:/Users/sergi/AppData/Local/Temp/UnrealShaderWorkingDir/B80C15C14BC4F6265800F4B5540B25FD/1/WorkerOutputOnly.out" 1827
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/Geometry/Meshes/1M_Cube_Chamfer.uasset" 1828
+"../../../Engine/Content/Tutorial/Landscape/Landscape_Manage_Mode.uasset" 1829
+"../../../Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset" 1830
+"../../../Engine/Content/Tutorial/SubEditors/MaterialEditorTutorial.uasset" 1831
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialMaterial.uasset" 1832
+"../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintMacroLibrariesEditorOverview.uasset" 1833
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintMacroLibrary_64x.uasset" 1834
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset" 1835
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part1-Overview.uasset" 1836
+"../../../../../../Users/sergi/Documents/Unreal Projects/Simon-Says/Content/PuzzleBP/Tutorial/Part2-BlockBlueprint.uasset" 1837
+"../../../Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset" 1838
+"../../../Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset" 1839
+"../../../Engine/Content/Tutorial/Landscape/Landscape_Sculpt_Mode.uasset" 1840
+"../../../Engine/Content/Tutorial/SubEditors/ParticleSystemEditorTutorial.uasset" 1841
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem.uasset" 1842
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset" 1843
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/T_SmokeSubUV_8X8.uasset" 1844
+"../../../Engine/Content/Tutorial/SubEditors/TutorialAssets/T_soft_smoke.uasset" 1845
+"../../../Engine/Content/Tutorial/Landscape/Landscape_Painting_Mode.uasset" 1846

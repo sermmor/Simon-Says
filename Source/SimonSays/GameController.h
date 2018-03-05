@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "BallGUI.h"
+#include "SimonGameType.h"
 #include "GameController.generated.h"
 
 const float SECONDS_TO_LOAD = 2.0f;
