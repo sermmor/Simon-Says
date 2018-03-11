@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "CounterDeltaTime.h"
 #include "BallGUI.generated.h"
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -29,11 +30,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
 	float SpeedTurnOnAndOff;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	float EmissionIncrement;
+	// Time with the light on.
+	float TimeLightOn;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	float TimeLightOn; // Time with the light on.
+	// Time between light on and light off (and vice versa).
+	float TimeLightTurningOnOff;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	USoundBase* SoundTurnOn; // Sound when ball turn on.
+	// Sound when ball turn on.
+	USoundBase* SoundTurnOn;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
 	FString NameActionButton;
 
@@ -54,29 +58,30 @@ public:
 	void ResetClickedInBall();
 private:
 	UPROPERTY()
-	UMaterialInstanceDynamic* DynamicMatEmit;
+	UMaterialInstanceDynamic* DynamicMatEmitOff;
+	UPROPERTY()
+	UMaterialInstanceDynamic* DynamicMatEmitFromOffToOn;
+	UPROPERTY()
+	UMaterialInstanceDynamic* DynamicMatEmitOn;
 	UPROPERTY()
 	TWeakObjectPtr<AActor> Sphere;
 	UPROPERTY()
 	UInputComponent* InputComp;
+	UPROPERTY()
+	UStaticMeshComponent* meshComponent;
 
 	BallState State;
+	CounterDeltaTime EmitCounterDT;
 
 	bool IsInitialized;
 	bool IsEnableClick;
 	bool IsClickBall;
 	bool IsSoundLightEnable;
 
-	float EmitCounter;
-	float EndEmitCounter;
-	float CurrentEmision;
-	float EndEmission;
-
 	void InitializeGamepad();
 	void GrabReferences(UMaterial* BallMaterialInterface);
 	void CreateDynamicMaterial(UMaterial* BallMaterialInterface);
 	void SetReferences();
-	void ResetCounters();
 	void UpdateEmissionOn(float DeltaTime);
 	void UpdateWaitOn(float DeltaTime);
 	void UpdateEmissionOff(float DeltaTime);
