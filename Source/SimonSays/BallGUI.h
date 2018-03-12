@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "CounterDeltaTime.h"
 #include "BallGUI.generated.h"
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -29,18 +30,23 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
 	float SpeedTurnOnAndOff;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	float EmissionIncrement;
+	// Time with the light on.
+	float TimeLightOn;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	float TimeLightOn; // Time with the light on.
+	// Time between light on and light off (and vice versa).
+	float TimeLightTurningOnOff;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
-	USoundBase* SoundTurnOn; // Sound when ball turn on.
+	// Sound when ball turn on.
+	USoundBase* SoundTurnOn;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball GUI Params")
+	FString NameActionButton;
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	// Executed when component destroyed.
 	virtual void OnComponentDestroyed(bool bDestroyingHierarchy) override;
 	// Initialize the ball with a template material.
-	void InitializeBall(UMaterial* BallMaterialInterface);
+	void InitializeBall(UMaterial* BallMaterialInterface, UInputComponent* ic);
 
 	BallState GetBallState() const;
 	void TurnOn(bool EmitSound);
@@ -51,27 +57,35 @@ public:
 	bool IsClickedInBall() const;
 	void ResetClickedInBall();
 private:
-	UMaterialInstanceDynamic* DynamicMatEmit;
+	UPROPERTY()
+	UMaterialInstanceDynamic* DynamicMatEmitOff;
+	UPROPERTY()
+	UMaterialInstanceDynamic* DynamicMatEmitFromOffToOn;
+	UPROPERTY()
+	UMaterialInstanceDynamic* DynamicMatEmitOn;
+	UPROPERTY()
 	TWeakObjectPtr<AActor> Sphere;
+	UPROPERTY()
+	UInputComponent* InputComp;
+	UPROPERTY()
+	UStaticMeshComponent* meshComponent;
+
 	BallState State;
+	CounterDeltaTime EmitCounterDT;
 
 	bool IsInitialized;
 	bool IsEnableClick;
 	bool IsClickBall;
 	bool IsSoundLightEnable;
 
-	float EmitCounter;
-	float EndEmitCounter;
-	float CurrentEmision;
-	float EndEmission;
-
+	void InitializeGamepad();
 	void GrabReferences(UMaterial* BallMaterialInterface);
 	void CreateDynamicMaterial(UMaterial* BallMaterialInterface);
 	void SetReferences();
-	void ResetCounters();
 	void UpdateEmissionOn(float DeltaTime);
 	void UpdateWaitOn(float DeltaTime);
 	void UpdateEmissionOff(float DeltaTime);
+	void OnPushInBall();
 
 	UFUNCTION()
 	void OnClicInBall(AActor* Target, FKey ButtonPressed);

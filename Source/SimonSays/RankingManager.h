@@ -35,12 +35,13 @@ public:
 
 	void OnDestroyGameController(AActor* SelfActor);
 private:
+	UPROPERTY()
 	USaveRanking* SavesGameInstance;
 	TArray<FString> NamePlayers;
 	TArray<int> ScorePlayers;
 
+	void CopyTopTen(TArray<FString> &AllNamesFrom, TArray<int> &AllScoresFrom, TArray<FString> &AllNamesTo, TArray<int> &AllScoresTo);
 	void InsertNewRecordInOrder(FString name, int score);
 	void ReverseScorePlayers();
-	void DeleteEleven();
 	void SaveCurrentRanking();
 };

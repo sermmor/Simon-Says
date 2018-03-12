@@ -5,9 +5,9 @@
 
 
 // Sets default values for this component's properties
-UBallGUI::UBallGUI() : DynamicMatEmit(0), Sphere(0), IsInitialized(false), IsEnableClick(false), 
-	IsClickBall(false), EmitCounter(0.0f), EndEmitCounter(0.01f), CurrentEmision(0.0f),
-	EndEmission(50.0f), State(BALL_OFF)
+UBallGUI::UBallGUI() : DynamicMatEmitOff(0), DynamicMatEmitOn(0), DynamicMatEmitFromOffToOn(0),
+	meshComponent(0), Sphere(0), IsInitialized(false), IsEnableClick(false),
+	IsClickBall(false), EmitCounterDT(0.01f), State(BALL_OFF)
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -23,16 +23,25 @@ void UBallGUI::BeginPlay()
 	IsInitialized = false, 
 	IsEnableClick = false;
 	IsClickBall = false;
-	EmitCounter = 0.0f;
-	EndEmitCounter = 0.01f;
-	CurrentEmision = 0.0f;
-	EndEmission = 50.0f;
+	EmitCounterDT.SetEndTime(TimeLightTurningOnOff);
 	State = BALL_OFF;
 }
 
-void UBallGUI::InitializeBall(UMaterial* BallMaterialInterface)
+void UBallGUI::InitializeGamepad()
 {
+	if (InputComp)
+	{
+		//Do whatever with myInputComp if it's valid.
+		FName NameActionBt = FName(*NameActionButton);
+		InputComp->BindAction(NameActionBt, EInputEvent::IE_Released, this, &UBallGUI::OnPushInBall);//"ActionA"
+	}
+}
+
+void UBallGUI::InitializeBall(UMaterial* BallMaterialInterface, UInputComponent* ic)
+{
+	InputComp = ic;
 	Super::GetOwner()->OnClicked.AddDynamic(this, &UBallGUI::OnClicInBall);
+	InitializeGamepad();
 
 	GrabReferences(BallMaterialInterface);
 	SetReferences();
@@ -47,18 +56,30 @@ void UBallGUI::GrabReferences(UMaterial* BallMaterialInterface)
 
 void UBallGUI::CreateDynamicMaterial(UMaterial* BallMaterialInterface)
 {
-	DynamicMatEmit = UMaterialInstanceDynamic::Create(BallMaterialInterface, this);
-	DynamicMatEmit->SetVectorParameterValue(FName("Color"), FLinearColor(ColorRGB[0], ColorRGB[1], ColorRGB[2]));
-	DynamicMatEmit->SetVectorParameterValue(FName("ColorLight"), FLinearColor(ColorLight[0], ColorLight[1], ColorLight[2]));
-	DynamicMatEmit->SetScalarParameterValue(FName("Emission"), 0.0f);
+	DynamicMatEmitOff = UMaterialInstanceDynamic::Create(BallMaterialInterface, this);
+	DynamicMatEmitOff->SetVectorParameterValue(FName("Color"), FLinearColor(ColorRGB[0], ColorRGB[1], ColorRGB[2]));
+	DynamicMatEmitOff->SetVectorParameterValue(FName("ColorLight"), FLinearColor(ColorLight[0], ColorLight[1], ColorLight[2]));
+	DynamicMatEmitOff->SetScalarParameterValue(FName("Emission"), 0.0f);
+
+	DynamicMatEmitFromOffToOn = UMaterialInstanceDynamic::Create(BallMaterialInterface, this);
+	DynamicMatEmitFromOffToOn->SetVectorParameterValue(FName("Color"), FLinearColor(ColorRGB[0], ColorRGB[1], ColorRGB[2]));
+	DynamicMatEmitFromOffToOn->SetVectorParameterValue(FName("ColorLight"), FLinearColor(ColorLight[0], ColorLight[1], ColorLight[2]));
+	DynamicMatEmitFromOffToOn->SetScalarParameterValue(FName("Emission"), 10.0f);
+
+	DynamicMatEmitOn = UMaterialInstanceDynamic::Create(BallMaterialInterface, this);
+	DynamicMatEmitOn->SetVectorParameterValue(FName("Color"), FLinearColor(ColorRGB[0], ColorRGB[1], ColorRGB[2]));
+	DynamicMatEmitOn->SetVectorParameterValue(FName("ColorLight"), FLinearColor(ColorLight[0], ColorLight[1], ColorLight[2]));
+	DynamicMatEmitOn->SetScalarParameterValue(FName("Emission"), 50.0f);
 }
 
 void UBallGUI::SetReferences()
 {
-	TArray<UStaticMeshComponent*> meshComponent;
-	Sphere->GetComponents<UStaticMeshComponent>(meshComponent);
+	TArray<UStaticMeshComponent*> meshComponentArray;
+	Sphere->GetComponents<UStaticMeshComponent>(meshComponentArray);
 
-	meshComponent[0]->SetMaterial(0, (UMaterialInterface*)DynamicMatEmit);
+	meshComponent = meshComponentArray[0];
+
+	meshComponent->SetMaterial(0, (UMaterialInterface*)DynamicMatEmitOff);
 }
 
 // Called every frame
@@ -79,67 +100,50 @@ void UBallGUI::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	
 }
 
-void UBallGUI::ResetCounters()
-{
-	EmitCounter = 0.0f;
-	CurrentEmision = 0.0f; 
-}
-
 void UBallGUI::UpdateEmissionOn(float DeltaTime)
 {
-	if (CurrentEmision < EndEmission)
+	if (EmitCounterDT.IsInTimeZero())
+		meshComponent->SetMaterial(0, (UMaterialInterface*)DynamicMatEmitFromOffToOn);
+
+	EmitCounterDT.Update(DeltaTime, SpeedTurnOnAndOff);
+
+	if (EmitCounterDT.IsEnd())
 	{
-		// Update Counter.
-		EmitCounter = EmitCounter + (SpeedTurnOnAndOff * DeltaTime);
-		if (EmitCounter > EndEmitCounter)
-		{
-			// Update Emission.
-			CurrentEmision = CurrentEmision + EmissionIncrement;
-			if (CurrentEmision > EndEmitCounter) CurrentEmision = EndEmission;
-			DynamicMatEmit->SetScalarParameterValue(FName("Emission"), CurrentEmision);
-			EmitCounter = 0.0f;
-		}
-	}
-	else if (CurrentEmision >= EndEmission)
-	{
+		// Go to turn on state.
+		meshComponent->SetMaterial(0, (UMaterialInterface*)DynamicMatEmitOn);
 		State = BALL_ON;
 		if (IsSoundLightEnable) UGameplayStatics::PlaySound2D(GetWorld(), SoundTurnOn);
-		ResetCounters();
+		EmitCounterDT.SetEndTime(TimeLightOn);
+		EmitCounterDT.Reset();
 	}
 }
 
 void UBallGUI::UpdateWaitOn(float DeltaTime)
 {
 	// Update Counter.
-	CurrentEmision = EmitCounter + (SpeedTurnOnAndOff * DeltaTime);
-	if (CurrentEmision > TimeLightOn)
+	EmitCounterDT.Update(DeltaTime, SpeedTurnOnAndOff);
+	if (EmitCounterDT.IsEnd())
 	{
-		// Finish time On.
+		// Finish time On => Go to turning off state.
 		State = BALL_TURNING_OFF;
-		ResetCounters();
-		CurrentEmision = 50.0f;
+		EmitCounterDT.SetEndTime(TimeLightTurningOnOff);
+		EmitCounterDT.Reset();
 	}
 }
 
 void UBallGUI::UpdateEmissionOff(float DeltaTime)
 {
-	if (CurrentEmision > 0)
+	if (EmitCounterDT.IsInTimeZero())
+		meshComponent->SetMaterial(0, (UMaterialInterface*)DynamicMatEmitFromOffToOn);
+
+	EmitCounterDT.Update(DeltaTime, SpeedTurnOnAndOff);
+
+	if (EmitCounterDT.IsEnd())
 	{
-		// Update Counter.
-		EmitCounter = EmitCounter + (SpeedTurnOnAndOff * DeltaTime);
-		if (EmitCounter > EndEmitCounter)
-		{
-			// Update Emission.
-			CurrentEmision = CurrentEmision - EmissionIncrement;
-			if (CurrentEmision < 0) CurrentEmision = 0;
-			DynamicMatEmit->SetScalarParameterValue(FName("Emission"), CurrentEmision);
-			EmitCounter = 0.0f;
-		}
-	}
-	else if (CurrentEmision == 0)
-	{
+		// Go to turn off state.
+		meshComponent->SetMaterial(0, (UMaterialInterface*)DynamicMatEmitOff);
 		State = BALL_OFF;
-		ResetCounters();
+		EmitCounterDT.Reset();
 	}
 }
 
@@ -150,6 +154,7 @@ UBallGUI::BallState UBallGUI::GetBallState() const
 
 void UBallGUI::TurnOn(bool emitSound)
 {
+	// Enable turning on state.
 	State = BALL_TURNING_ON;
 	IsSoundLightEnable = emitSound;
 }
@@ -181,6 +186,11 @@ void UBallGUI::ResetClickedInBall()
 
 void UBallGUI::OnClicInBall(AActor* Target, FKey ButtonPressed)
 {
+	OnPushInBall();
+}
+
+void UBallGUI::OnPushInBall()
+{
 	if (IsEnableClick && IsInTurnOff())
 	{
 		// When player click on ball: turn on the ball and mark as clicked.
@@ -194,9 +204,21 @@ void UBallGUI::OnComponentDestroyed(bool bDestroyingHierarchy)
 	Super::OnComponentDestroyed(bDestroyingHierarchy);
 
 	// Cleaned all dynamic memory.
-	if (DynamicMatEmit != NULL)
+	if (DynamicMatEmitOff != NULL)
 	{
-		delete DynamicMatEmit;
-		DynamicMatEmit = NULL;
+		delete DynamicMatEmitOff;
+		DynamicMatEmitOff = NULL;
 	}
+
+	if (meshComponent != NULL)
+		meshComponent = NULL;
+
+	if (DynamicMatEmitFromOffToOn != NULL)
+		DynamicMatEmitFromOffToOn = NULL;
+	
+	if (DynamicMatEmitOn != NULL)
+		DynamicMatEmitOn = NULL;
+
+	if (InputComp != NULL)
+		InputComp = NULL;
 }
