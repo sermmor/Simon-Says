@@ -14,5 +14,5 @@ You can turn on a light clicking over it.
 ### Xbox 360 gamepad
 You can turn on a light pushing the gamepad button with the same color.
 
-### Video (click over the image)
+## Video (click over the image)
 [![Clic here to open the video](https://img.youtube.com/vi/hq-fOlpNpNE/0.jpg)](https://www.youtube.com/watch?v=hq-fOlpNpNE)
