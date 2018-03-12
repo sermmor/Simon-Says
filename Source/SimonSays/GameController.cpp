@@ -4,8 +4,8 @@
 #include "Engine.h"
 
 // Sets default values
-AGameController::AGameController() : SimonSaysCurrentState(INIT), CurrentTime(0), Score(0), ItemReadyToGive(false),
-	Life(MAX_LIFE), IsTimeEnds(false), IsPlayerWinsGame(false), IsGameEnded(false)
+AGameController::AGameController() : SimonSaysCurrentState(INIT), Score(0), ItemReadyToGive(false),
+	Life(MAX_LIFE), IsTimeEnds(false), IsPlayerWinsGame(false), IsGameEnded(false), GeneralCounter(SECONDS_TO_LOAD)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -73,7 +73,7 @@ void AGameController::BeginPlay()
 	IsPlayerWinsGame = false;
 	IsGameEnded = false;
 	ItemReadyToGive = false;
-	CurrentTime = 0;
+	GeneralCounter.SetEndTime(SECONDS_TO_LOAD);
 
 	CreateRandomSecuence();
 
@@ -190,11 +190,11 @@ void AGameController::UpdateSimonSaysGame(float DeltaTime)
 
 bool AGameController::StrategyWaitPostLoad(float DeltaTime)
 {
-	CurrentTime = CurrentTime + DeltaTime;
-	if (CurrentTime > SECONDS_TO_LOAD)
+	GeneralCounter.Update(DeltaTime, 1.0f);
+	if (GeneralCounter.IsEnd())
 	{
 		// Time finished. Reset generic timer and return true.
-		CurrentTime = 0;
+		GeneralCounter.Reset();
 		return true;
 	}
 	return false;
