@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "BallGUI.h"
+#include "CounterDeltaTime.h"
 #include "GameController.generated.h"
 
 const float SECONDS_TO_LOAD = 2.0f;
@@ -22,7 +23,7 @@ public:
 	// Sets default values for this actor's properties
 	AGameController();
 
-	enum GameType { NONE, SIMON_SAYS };
+	enum GameSelected { NONE, SIMON_SAYS };
 	enum SimonSaysStates {INIT, BEGIN, WAIT_UNTIL_BEGIN_ENDS, MACHINE_TURN, 
 		INIT_PLAYER_TURN, PLAYER_TURN, PLAYER_TURN_FINISHING, SHOW_OK, SHOW_FAIL, WIN_END, LOSE_END};
 
@@ -38,9 +39,9 @@ private:
 	TArray<UBallGUI*> AllBallsGUI;
 	UPROPERTY()
 	UMaterial* BallMaterialInterface;
-	GameType GameTypeSelected;
+	GameSelected GameTypeSelected;
 	int SecuenceBalls[SIZE_SECUENCE];
-	float CurrentTime;
+	CounterDeltaTime GeneralCounter;
 	int Score, Life;
 	bool IsTimeEnds, IsPlayerWinsGame, IsGameEnded, ItemReadyToGive;
 	

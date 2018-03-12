@@ -4,9 +4,10 @@
 #include "Blueprint/UserWidget.h"
 #include "TextWidgetTypes.h"
 #include "TextBlock.h"
+#include "Image.h"
 
 // Sets default values
-ASpawnUIScreen::ASpawnUIScreen() : CurrentTime(TimeInit), CounterToDecrementTimer(0.0f), PlayerIsReady(false)
+ASpawnUIScreen::ASpawnUIScreen() : CurrentTime(0), CounterToDecrementTimer(0.0f), PlayerIsReady(false)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -32,6 +33,7 @@ void ASpawnUIScreen::BeginPlay()
 			pToSpawnWidget->AddToViewport();
 			if (IsGameScreen)
 			{
+				//UImage img;
 				pScoreText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextScore");
 				pTimeText = (UTextBlock*) pToSpawnWidget->GetWidgetFromName("TextTime");
 			}
